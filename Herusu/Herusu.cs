@@ -16,5 +16,11 @@ namespace Herusu
         {
             InitializeComponent();
         }
+
+        private void SendButton_Click(object sender, EventArgs e)
+        {
+            ChatSpace.Text += InputTextBox.Text + "\n";
+            InputTextBox.Text = String.Empty;
+        }
     }
 }

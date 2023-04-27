@@ -42,7 +42,7 @@ namespace Herusu
             //InputTextBox.Text = String.Empty;
             string input = InputTextBox.Text;
             showRequestToChatSpace();
-            string apiKey = "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";
+            string apiKey = "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";
             var client = new HttpClient();
             client.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}");
             var content = new StringContent("{\"model\": \"text-davinci-003\", \"prompt\": \"" + input + "\", \"temperature\": 0, \"max_tokens\":4000}", Encoding.UTF8, "application/json");

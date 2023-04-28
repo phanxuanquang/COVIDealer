@@ -22,9 +22,10 @@ namespace COVIDealer
         {
             InitializeComponent();
 
-            chatTab = new ChatTab();                 
-            
-            //loadTab(chatTab);
+            chatTab = new ChatTab();
+
+            loadTab(chatTab);
+
         }
         private void loadTab(UserControl tab)
         {
@@ -65,7 +66,7 @@ namespace COVIDealer
         {
             HttpClient httpClient = new HttpClient();
             var response = await httpClient.GetAsync("https://static.pipezero.com/covid/data.json");
-            data = JsonConvert.DeserializeObject<Data>(await response.Content.ReadAsStringAsync());
+            data = JsonConvert.DeserializeObject<Data>(await response.Content.ReadAsStringAsync());     
             statisticTab = new StatisticTab(data);
         }
     }

@@ -16,16 +16,27 @@ namespace COVIDealer
     {
         ChatTab chatTab;
         StatisticTab statisticTab;
+        VideoTab videoTab;
 
-        Data data;
+        StatisticData data;
         public MainWindows()
         {
             InitializeComponent();
 
             chatTab = new ChatTab();
+            videoTab = new VideoTab();
+            statisticTab = new StatisticTab();
 
             loadTab(chatTab);
-
+        }
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParam = base.CreateParams;
+                handleParam.ExStyle |= 0x02000000;   // WS_EX_COMPOSITED       
+                return handleParam;
+            }
         }
         private void loadTab(UserControl tab)
         {
@@ -59,15 +70,14 @@ namespace COVIDealer
 
         private void VideoTab_Button_Click(object sender, EventArgs e)
         {
-
+            loadTab(videoTab);
         }
 
         private async void MainWindows_Load(object sender, EventArgs e)
         {
             HttpClient httpClient = new HttpClient();
             var response = await httpClient.GetAsync("https://static.pipezero.com/covid/data.json");
-            data = JsonConvert.DeserializeObject<Data>(await response.Content.ReadAsStringAsync());      
-            statisticTab = new StatisticTab(data);
+            data = JsonConvert.DeserializeObject<StatisticData>(await response.Content.ReadAsStringAsync());   
         }
     }
 }

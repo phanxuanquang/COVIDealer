@@ -1,26 +1,28 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics.Metrics;
-using System.Globalization;
+using System.Data;
+using System.Drawing;
 using System.Linq;
-using System.Net;
-using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using YoutubeExplode;
+using Google.Apis.YouTube.v3;
 using Newtonsoft.Json;
+using System.Net.Http;
 
-namespace test
+namespace COVIDealer
 {
-    public partial class Form1 : Form
+    public partial class VideoTab : UserControl
     {
         VideoData videoData;
-        public Form1()
+        public VideoTab()
         {
             InitializeComponent();
         }
 
-        private async void SendButton_Click(object sender, EventArgs e)
+        private async void VideoTab_Load(object sender, EventArgs e)
         {
             HttpClient httpClient = new HttpClient();
             var response = await httpClient.GetAsync("https://youtube.googleapis.com/youtube/v3/search?part=id%2C%20snippet&maxResults=50&order=date&q=s%E1%BB%91%20ca%20m%E1%BA%AFc%20covid&type=video&key=AIzaSyCCGaaRT6VxH2TXo-PN6zRcwr3MJPWyEfs");

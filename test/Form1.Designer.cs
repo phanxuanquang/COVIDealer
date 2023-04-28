@@ -30,7 +30,7 @@
         {
             SendButton = new Button();
             richTextBox2 = new RichTextBox();
-            countries_ComboBox = new MetroFramework.Controls.MetroComboBox();
+            richTextBox1 = new RichTextBox();
             SuspendLayout();
             // 
             // SendButton
@@ -54,36 +54,32 @@
             richTextBox2.TabIndex = 2;
             richTextBox2.Text = "";
             // 
-            // countries_ComboBox
+            // richTextBox1
             // 
-            countries_ComboBox.FlatStyle = FlatStyle.Flat;
-            countries_ComboBox.FormattingEnabled = true;
-            countries_ComboBox.ItemHeight = 23;
-            countries_ComboBox.Location = new Point(12, 6);
-            countries_ComboBox.Name = "countries_ComboBox";
-            countries_ComboBox.Size = new Size(181, 29);
-            countries_ComboBox.Sorted = true;
-            countries_ComboBox.TabIndex = 4;
-            countries_ComboBox.UseSelectable = true;
+            richTextBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            richTextBox1.Location = new Point(12, 12);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(1172, 719);
+            richTextBox1.TabIndex = 3;
+            richTextBox1.Text = "";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1196, 815);
-            Controls.Add(countries_ComboBox);
+            Controls.Add(richTextBox1);
             Controls.Add(richTextBox2);
             Controls.Add(SendButton);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            Shown += Form1_Shown;
             ResumeLayout(false);
         }
 
         #endregion
         private Button SendButton;
         private RichTextBox richTextBox2;
-        private MetroFramework.Controls.MetroComboBox countries_ComboBox;
+        private RichTextBox richTextBox1;
     }
 }

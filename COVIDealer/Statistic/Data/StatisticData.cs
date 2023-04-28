@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace COVIDealer
 {
-    public class Data
+    public class StatisticData
     {
         [JsonProperty("total")]
         public Total Total { get; set; }

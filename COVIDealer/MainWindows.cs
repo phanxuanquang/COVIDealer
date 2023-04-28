@@ -24,7 +24,7 @@ namespace COVIDealer
 
             chatTab = new ChatTab();                 
             
-            loadTab(chatTab);
+            //loadTab(chatTab);
         }
         private void loadTab(UserControl tab)
         {

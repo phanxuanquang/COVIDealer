@@ -50,12 +50,11 @@
             this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuPanel.Location = new System.Drawing.Point(0, 0);
             this.MenuPanel.Name = "MenuPanel";
-            this.MenuPanel.Size = new System.Drawing.Size(130, 673);
+            this.MenuPanel.Size = new System.Drawing.Size(130, 761);
             this.MenuPanel.TabIndex = 0;
             // 
             // VideoTab_Button
             // 
-            this.VideoTab_Button.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.VideoTab_Button.Animated = true;
             this.VideoTab_Button.AnimationHoverSpeed = 0.07F;
             this.VideoTab_Button.AnimationSpeed = 0.03F;
@@ -81,7 +80,6 @@
             // 
             // NewsTab_Button
             // 
-            this.NewsTab_Button.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.NewsTab_Button.Animated = true;
             this.NewsTab_Button.AnimationHoverSpeed = 0.07F;
             this.NewsTab_Button.AnimationSpeed = 0.03F;
@@ -107,7 +105,6 @@
             // 
             // SearchTab_Button
             // 
-            this.SearchTab_Button.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.SearchTab_Button.Animated = true;
             this.SearchTab_Button.AnimationHoverSpeed = 0.07F;
             this.SearchTab_Button.AnimationSpeed = 0.03F;
@@ -133,7 +130,6 @@
             // 
             // StatisticsTab_Button
             // 
-            this.StatisticsTab_Button.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.StatisticsTab_Button.Animated = true;
             this.StatisticsTab_Button.AnimationHoverSpeed = 0.07F;
             this.StatisticsTab_Button.AnimationSpeed = 0.03F;
@@ -159,7 +155,6 @@
             // 
             // ChatTab_Button
             // 
-            this.ChatTab_Button.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ChatTab_Button.Animated = true;
             this.ChatTab_Button.AnimationHoverSpeed = 0.07F;
             this.ChatTab_Button.AnimationSpeed = 0.03F;
@@ -191,7 +186,7 @@
             this.mainPanel.BackColor = System.Drawing.Color.White;
             this.mainPanel.Location = new System.Drawing.Point(139, 11);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(940, 651);
+            this.mainPanel.Size = new System.Drawing.Size(1118, 739);
             this.mainPanel.TabIndex = 1;
             // 
             // MainWindows
@@ -199,7 +194,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1086, 673);
+            this.ClientSize = new System.Drawing.Size(1264, 761);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.MenuPanel);
             this.Name = "MainWindows";

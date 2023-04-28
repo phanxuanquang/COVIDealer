@@ -78,12 +78,6 @@
     <Compile Include="Data\Location.cs" />
     <Compile Include="Data\Overview.cs" />
     <Compile Include="Data\Data.cs" />
-    <Compile Include="Statistic\UI\InternalStatistics_Panel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Statistic\UI\InternalStatistics_Panel.Designer.cs">
-      <DependentUpon>InternalStatistics_Panel.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainWindows.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,11 +95,14 @@
     <Compile Include="Data\Today.cs" />
     <Compile Include="Data\Total.cs" />
     <Compile Include="Data\World.cs" />
+    <Compile Include="test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Chat\ChatTab.resx">
       <DependentUpon>ChatTab.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Statistic\UI\InternalStatistics_Panel.resx">
-      <DependentUpon>InternalStatistics_Panel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindows.resx">
       <DependentUpon>MainWindows.cs</DependentUpon>
@@ -121,6 +118,9 @@
     </Compile>
     <EmbeddedResource Include="Statistic\UI\StatisticTab.resx">
       <DependentUpon>StatisticTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

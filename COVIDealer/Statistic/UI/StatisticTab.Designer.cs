@@ -454,6 +454,7 @@
             this.Controls.Add(this.statisticChart);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Statistics_Panel);
+            this.DoubleBuffered = true;
             this.Name = "StatisticTab";
             this.Size = new System.Drawing.Size(1118, 739);
             this.Load += new System.EventHandler(this.StatisticTab_Load);

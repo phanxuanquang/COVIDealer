@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace COVIDealer
+namespace test
 {
-    public class Default
+    public class Medium
     {
         [JsonProperty("url")]
         public string Url { get; set; }
@@ -16,6 +16,6 @@ namespace COVIDealer
         public int Width { get; set; }
 
         [JsonProperty("height")]
-        public int Height { get; set; }        
+        public int Height { get; set; }
     }
 }

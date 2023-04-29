@@ -13,18 +13,30 @@ namespace COVIDealer
 {
     public partial class VideoThumbnail : UserControl
     {
-        public VideoThumbnail()
+        public Snippet snippet;
+        public string videoID;
+        public VideoThumbnail() 
         {
             InitializeComponent();
+            
         }
-        public VideoThumbnail(Snippet snippet)
+        public void setParameter()
         {
-            InitializeComponent();
-
-            Thumbnail.LoadAsync(snippet.Thumbnails.Medium.Url);
+            ThumbnailImage.ImageLocation = snippet.Thumbnails.Medium.Url;
             Tittle.Text = snippet.Title;
             Channel.Text = snippet.ChannelTitle;
-            UploadDate.Text = snippet.PublishTime.ToString("dd/mm/yyyy");
+            UploadDate.Text = snippet.PublishTime.ToString("dd/MM/yyyy - HH:mm");
+        }
+
+
+        private void Tittle_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/embed/" + videoID);
+        }
+
+        private void ThumbnailImage_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/embed/" + videoID);
         }
     }
 }

@@ -17,8 +17,6 @@ namespace COVIDealer
         ChatTab chatTab;
         StatisticTab statisticTab;
         VideoTab videoTab;
-
-        StatisticData data;
         public MainWindows()
         {
             InitializeComponent();
@@ -71,13 +69,6 @@ namespace COVIDealer
         private void VideoTab_Button_Click(object sender, EventArgs e)
         {
             loadTab(videoTab);
-        }
-
-        private async void MainWindows_Load(object sender, EventArgs e)
-        {
-            HttpClient httpClient = new HttpClient();
-            var response = await httpClient.GetAsync("https://static.pipezero.com/covid/data.json");
-            data = JsonConvert.DeserializeObject<StatisticData>(await response.Content.ReadAsStringAsync());   
         }
     }
 }

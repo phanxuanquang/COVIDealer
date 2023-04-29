@@ -133,7 +133,7 @@
     <Compile Include="Video\Data\High.cs" />
     <Compile Include="Video\Data\Id.cs" />
     <Compile Include="Video\Data\Item.cs" />
-    <Compile Include="Medium.cs" />
+    <Compile Include="Video\Data\Medium.cs" />
     <Compile Include="Video\Data\PageInfo.cs" />
     <Compile Include="Video\Data\Snippet.cs" />
     <Compile Include="Statistic\Data\Internal.cs" />

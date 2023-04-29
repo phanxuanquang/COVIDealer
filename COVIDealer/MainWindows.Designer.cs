@@ -200,7 +200,6 @@
             this.Name = "MainWindows";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "COVIDealer";
-            this.Load += new System.EventHandler(this.MainWindows_Load);
             this.MenuPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -19,7 +19,15 @@ namespace COVIDealer
         {
             InitializeComponent();
         }
-
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParam = base.CreateParams;
+                handleParam.ExStyle |= 0x02000000;   // WS_EX_COMPOSITED       
+                return handleParam;
+            }
+        }
         private void Location_Label_Click(object sender, EventArgs e)
         {
             if (Location_Label.Text == "► Việt Nam:")

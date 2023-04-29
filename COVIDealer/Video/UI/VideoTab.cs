@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using YoutubeExplode;
-using Google.Apis.YouTube.v3;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Configuration;

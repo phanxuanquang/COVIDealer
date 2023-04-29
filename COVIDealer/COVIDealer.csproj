@@ -98,6 +98,18 @@
     <Compile Include="Chat\ChatTab.Designer.cs">
       <DependentUpon>ChatTab.cs</DependentUpon>
     </Compile>
+    <Compile Include="Video\UI\VideoTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Video\UI\VideoTab.Designer.cs">
+      <DependentUpon>VideoTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Video\UI\VideoThumbnail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Video\UI\VideoThumbnail.Designer.cs">
+      <DependentUpon>VideoThumbnail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Video\Data\Default.cs" />
     <Compile Include="Video\Data\High.cs" />
     <Compile Include="Video\Data\Id.cs" />
@@ -128,18 +140,6 @@
     <Compile Include="Statistic\Data\World.cs" />
     <Compile Include="Video\Data\Thumbnails.cs" />
     <Compile Include="Video\Data\VideoData.cs" />
-    <Compile Include="Video\UI\VideoTab.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Video\UI\VideoTab.Designer.cs">
-      <DependentUpon>VideoTab.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Video\UI\VideoThumbnail.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Video\UI\VideoThumbnail.Designer.cs">
-      <DependentUpon>VideoThumbnail.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Chat\ChatTab.resx">
       <DependentUpon>ChatTab.cs</DependentUpon>
     </EmbeddedResource>

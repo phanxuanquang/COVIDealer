@@ -14,26 +14,22 @@ namespace COVIDealer
 {
     public partial class MainWindows : Form
     {
-        ChatTab chatTab;
-        StatisticTab statisticTab;
-        VideoTab videoTab;
+        ChatTab chatTab = null;
+        StatisticTab statisticTab = null;
+        VideoTab videoTab = null;
         public MainWindows()
         {
             InitializeComponent();
             this.Icon = Properties.Resources.COVIDealer;
 
-            chatTab = new ChatTab();
-            videoTab = new VideoTab();
-            statisticTab = new StatisticTab();   
-
-            loadTab(chatTab);
+            StatisticsTab_Button_Click(this, null);
         }
         protected override CreateParams CreateParams
         {
             get
             {
                 CreateParams handleParam = base.CreateParams;
-                handleParam.ExStyle |= 0x02000000;   // WS_EX_COMPOSITED       
+                handleParam.ExStyle |= 0x02000000;          
                 return handleParam;
             }
         }
@@ -47,13 +43,22 @@ namespace COVIDealer
             tab.Dock = DockStyle.Fill;
         }
 
+        #region Button Events
         private void ChatTab_Button_Click(object sender, EventArgs e)
         {
+            if (chatTab == null)
+            {
+                chatTab = new ChatTab();
+            }
             loadTab(chatTab);      
         }
 
         private void StatisticsTab_Button_Click(object sender, EventArgs e)
         {
+            if (statisticTab == null)
+            {
+                statisticTab = new StatisticTab();
+            }
             loadTab(statisticTab);
         }
 
@@ -69,7 +74,12 @@ namespace COVIDealer
 
         private void VideoTab_Button_Click(object sender, EventArgs e)
         {
+            if (videoTab == null)
+            {
+                videoTab = new VideoTab();
+            }
             loadTab(videoTab);
         }
+        #endregion
     }
 }

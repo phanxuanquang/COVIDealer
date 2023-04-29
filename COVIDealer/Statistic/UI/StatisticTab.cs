@@ -19,15 +19,26 @@ namespace COVIDealer
         {
             InitializeComponent();
         }
-        protected override CreateParams CreateParams
+        private async void StatisticTab_Load(object sender, EventArgs e)
         {
-            get
+            HttpClient httpClient = new HttpClient();
+            var response = await httpClient.GetAsync("https://static.pipezero.com/covid/data.json");
+            statisticData = JsonConvert.DeserializeObject<StatisticData>(await response.Content.ReadAsStringAsync());
+
+            covidCase.Text = statisticData.Today.Internal.Cases.ToString("#,##0.###");
+            treatedCase.Text = statisticData.Today.Internal.Recovered.ToString("#,##0.###");
+            deathCase.Text = statisticData.Today.Internal.Death.ToString("#,##0.###");
+
+            caseButton_Click(this, null);
+            Location_Label_Click(this, null);
+
+            for (int i = 0; i < statisticData.Locations.Count; i++)
             {
-                CreateParams handleParam = base.CreateParams;
-                handleParam.ExStyle |= 0x02000000;   // WS_EX_COMPOSITED       
-                return handleParam;
+                statisticTable.Rows.Add(statisticData.Locations[i].Name, statisticData.Locations[i].Cases, statisticData.Locations[i].CasesToday, statisticData.Locations[i].Death);
             }
         }
+
+        #region Click Events
         private void Location_Label_Click(object sender, EventArgs e)
         {
             if (Location_Label.Text == "► Việt Nam:")
@@ -46,7 +57,7 @@ namespace COVIDealer
                 covidCase.Text = statisticData.Total.Internal.Cases.ToString("#,##0.###");
                 treatedCase.Text = statisticData.Total.Internal.Recovered.ToString("#,##0.###");
                 deathCase.Text = statisticData.Total.Internal.Death.ToString("#,##0.###");
-                newCaseLabel.Text = String.Format("{0} ca mới trong 24 giờ qua", statisticData.Today.Internal.Cases.ToString()); 
+                newCaseLabel.Text = String.Format("{0} ca mới trong 24 giờ qua", statisticData.Today.Internal.Cases.ToString());
                 newTreatedCaseLabel.Text = String.Format("{0} ca mới trong 24 giờ qua", statisticData.Today.Internal.Recovered.ToString());
                 newDeathCaseLabel.Text = String.Format("{0} ca mới trong 24 giờ qua", statisticData.Today.Internal.Death.ToString());
             }
@@ -84,24 +95,6 @@ namespace COVIDealer
                 statisticChart.Series["Case"].Points.AddXY(statisticData.Overview[i].Date, statisticData.Overview[i].Death);
             }
         }
-
-        private async void StatisticTab_Load(object sender, EventArgs e)
-        {
-            HttpClient httpClient = new HttpClient();
-            var response = await httpClient.GetAsync("https://static.pipezero.com/covid/data.json");
-            statisticData = JsonConvert.DeserializeObject<StatisticData>(await response.Content.ReadAsStringAsync());
-
-            covidCase.Text = statisticData.Today.Internal.Cases.ToString("#,##0.###");
-            treatedCase.Text = statisticData.Today.Internal.Recovered.ToString("#,##0.###");
-            deathCase.Text = statisticData.Today.Internal.Death.ToString("#,##0.###");
-
-            caseButton_Click(this, null);
-            Location_Label_Click(this, null);
-
-            for (int i = 0; i < statisticData.Locations.Count; i++)
-            {
-                statisticTable.Rows.Add(statisticData.Locations[i].Name, statisticData.Locations[i].Cases, statisticData.Locations[i].CasesToday, statisticData.Locations[i].Death);
-            }
-        }
+        #endregion
     }
 }

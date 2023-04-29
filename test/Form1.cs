@@ -18,7 +18,7 @@ namespace test
         public Form1()
         {
             InitializeComponent();
-            
+
         }
 
         private async void SendButton_Click(object sender, EventArgs e)

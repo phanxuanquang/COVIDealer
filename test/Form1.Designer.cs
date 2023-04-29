@@ -30,7 +30,7 @@
         {
             SendButton = new Button();
             richTextBox2 = new RichTextBox();
-            richTextBox1 = new RichTextBox();
+            listView1 = new ListView();
             SuspendLayout();
             // 
             // SendButton
@@ -54,21 +54,20 @@
             richTextBox2.TabIndex = 2;
             richTextBox2.Text = "";
             // 
-            // richTextBox1
+            // listView1
             // 
-            richTextBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            richTextBox1.Location = new Point(12, 12);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(1172, 719);
-            richTextBox1.TabIndex = 3;
-            richTextBox1.Text = "";
+            listView1.Location = new Point(97, 75);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(608, 413);
+            listView1.TabIndex = 3;
+            listView1.UseCompatibleStateImageBehavior = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1196, 815);
-            Controls.Add(richTextBox1);
+            Controls.Add(listView1);
             Controls.Add(richTextBox2);
             Controls.Add(SendButton);
             Name = "Form1";
@@ -80,6 +79,6 @@
         #endregion
         private Button SendButton;
         private RichTextBox richTextBox2;
-        private RichTextBox richTextBox1;
+        private ListView listView1;
     }
 }

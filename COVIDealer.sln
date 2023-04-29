@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test", "test\test.csproj", "{88C05B6F-2C5F-4148-8A2A-74FDFF27130A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test Feature", "test\Test Feature.csproj", "{88C05B6F-2C5F-4148-8A2A-74FDFF27130A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COVIDealer", "COVIDealer\COVIDealer.csproj", "{1D1C0C3B-2230-4CBB-AC1B-BDD438B11253}"
 EndProject

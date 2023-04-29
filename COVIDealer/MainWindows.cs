@@ -20,10 +20,11 @@ namespace COVIDealer
         public MainWindows()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.COVIDealer;
 
             chatTab = new ChatTab();
             videoTab = new VideoTab();
-            statisticTab = new StatisticTab();
+            statisticTab = new StatisticTab();   
 
             loadTab(chatTab);
         }

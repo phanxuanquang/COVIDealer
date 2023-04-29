@@ -185,6 +185,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Statistic\UI\StatisticTab.resx">
       <DependentUpon>StatisticTab.cs</DependentUpon>
@@ -211,6 +212,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\COVIDealer.ico" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="News\" />

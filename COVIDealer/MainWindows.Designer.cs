@@ -199,7 +199,7 @@
             this.Controls.Add(this.MenuPanel);
             this.Name = "MainWindows";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "COVIDealer";
+            this.Text = "COVIDealer - Theo dõi tình hình COVID-19 tại Việt Nam";
             this.MenuPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 

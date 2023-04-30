@@ -17,7 +17,8 @@ namespace COVIDealer
         ChatTab chatTab = null;
         StatisticTab statisticTab = null;
         VideoTab videoTab = null;
-        public MainWindows()
+        NewsTab newsTab = null;
+        public MainWindows()  
         {
             InitializeComponent();
             this.Icon = Properties.Resources.COVIDealer;
@@ -69,7 +70,11 @@ namespace COVIDealer
 
         private void NewsTab_Button_Click(object sender, EventArgs e)
         {
-
+            if (newsTab == null)
+            {
+                newsTab = new NewsTab();           
+            }
+            loadTab(newsTab);
         }
 
         private void VideoTab_Button_Click(object sender, EventArgs e)

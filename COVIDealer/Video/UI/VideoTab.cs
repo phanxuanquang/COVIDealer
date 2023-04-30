@@ -35,6 +35,7 @@ namespace COVIDealer
                 newItem.videoID = item.Id.VideoId;
                 newItem.setParameter();
             }
+
         }
     }
 }

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COVIDealer", "COVIDealer\COVIDealer.csproj", "{1D1C0C3B-2230-4CBB-AC1B-BDD438B11253}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test feature", "test feature\test feature.csproj", "{50830964-E557-4AA9-B61B-EF04F0086C91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1D1C0C3B-2230-4CBB-AC1B-BDD438B11253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D1C0C3B-2230-4CBB-AC1B-BDD438B11253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D1C0C3B-2230-4CBB-AC1B-BDD438B11253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50830964-E557-4AA9-B61B-EF04F0086C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50830964-E557-4AA9-B61B-EF04F0086C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50830964-E557-4AA9-B61B-EF04F0086C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50830964-E557-4AA9-B61B-EF04F0086C91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

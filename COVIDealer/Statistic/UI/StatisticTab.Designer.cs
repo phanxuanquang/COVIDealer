@@ -245,6 +245,7 @@
             // 
             this.statisticTable.AllowUserToAddRows = false;
             this.statisticTable.AllowUserToDeleteRows = false;
+            this.statisticTable.AllowUserToResizeColumns = false;
             this.statisticTable.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.statisticTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -255,7 +256,7 @@
             this.statisticTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.statisticTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.statisticTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
@@ -339,7 +340,7 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(52)))), ((int)(((byte)(145)))));
-            this.label1.Location = new System.Drawing.Point(2, 131);
+            this.label1.Location = new System.Drawing.Point(2, 136);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(252, 28);
             this.label1.TabIndex = 10;
@@ -354,7 +355,7 @@
             this.statisticChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.statisticChart.Legends.Add(legend1);
-            this.statisticChart.Location = new System.Drawing.Point(644, 210);
+            this.statisticChart.Location = new System.Drawing.Point(644, 218);
             this.statisticChart.Name = "statisticChart";
             this.statisticChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             this.statisticChart.PaletteCustomColors = new System.Drawing.Color[] {
@@ -364,7 +365,7 @@
             series1.Name = "Case";
             series1.YValuesPerPoint = 2;
             this.statisticChart.Series.Add(series1);
-            this.statisticChart.Size = new System.Drawing.Size(587, 529);
+            this.statisticChart.Size = new System.Drawing.Size(587, 521);
             this.statisticChart.TabIndex = 12;
             this.statisticChart.Text = "chart1";
             title1.Alignment = System.Drawing.ContentAlignment.MiddleLeft;

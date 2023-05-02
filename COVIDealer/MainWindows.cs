@@ -51,7 +51,9 @@ namespace COVIDealer
             {
                 chatTab = new ChatTab();
             }
-            loadTab(chatTab);      
+            this.Text = "COVIDealer - " + ChatTab_Button.Text; 
+            loadTab(chatTab);  
+            
         }
 
         private void StatisticsTab_Button_Click(object sender, EventArgs e)
@@ -60,12 +62,13 @@ namespace COVIDealer
             {
                 statisticTab = new StatisticTab();
             }
+            this.Text = "COVIDealer - " + StatisticsTab_Button.Text;
             loadTab(statisticTab);
         }
 
         private void SearchTab_Button_Click(object sender, EventArgs e)
         {
-
+            this.Text = "COVIDealer - " + SearchTab_Button.Text;
         }
 
         private void NewsTab_Button_Click(object sender, EventArgs e)
@@ -74,6 +77,7 @@ namespace COVIDealer
             {
                 newsTab = new NewsTab();           
             }
+            this.Text = "COVIDealer - " + NewsTab_Button.Text;
             loadTab(newsTab);
         }
 
@@ -83,6 +87,7 @@ namespace COVIDealer
             {
                 videoTab = new VideoTab();
             }
+            this.Text = "COVIDealer - " + VideoTab_Button.Text;
             loadTab(videoTab);
         }
         #endregion

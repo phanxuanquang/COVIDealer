@@ -60,12 +60,12 @@
             this.Summary.BackColor = System.Drawing.Color.White;
             this.Summary.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Summary.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Summary.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Summary.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Summary.ForeColor = System.Drawing.Color.Gray;
-            this.Summary.Location = new System.Drawing.Point(330, 121);
+            this.Summary.Location = new System.Drawing.Point(327, 111);
             this.Summary.Name = "Summary";
             this.Summary.ReadOnly = true;
-            this.Summary.Size = new System.Drawing.Size(427, 59);
+            this.Summary.Size = new System.Drawing.Size(429, 69);
             this.Summary.TabIndex = 15;
             this.Summary.Text = "Ca Mắc COVID-19 Tăng, Bình Dương Yêu Cầu 6 Trường Hợp Phải Đeo Khẩu Trang | SKĐS";
             this.Summary.MouseEnter += new System.EventHandler(this.contentPanel_MouseEnter);
@@ -75,7 +75,7 @@
             // 
             this.UploadDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UploadDate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.UploadDate.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.UploadDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.UploadDate.ForeColor = System.Drawing.Color.Gray;
             this.UploadDate.Location = new System.Drawing.Point(325, 60);
             this.UploadDate.Name = "UploadDate";
@@ -89,7 +89,7 @@
             // 
             this.Channel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Channel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Channel.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Channel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Channel.ForeColor = System.Drawing.Color.Gray;
             this.Channel.Location = new System.Drawing.Point(325, 85);
             this.Channel.Name = "Channel";

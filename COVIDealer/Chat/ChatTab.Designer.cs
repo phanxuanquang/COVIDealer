@@ -46,6 +46,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(940, 509);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // InputBox
             // 
@@ -73,6 +74,7 @@
             this.DoubleBuffered = true;
             this.Name = "ChatTab";
             this.Size = new System.Drawing.Size(940, 651);
+            this.Load += new System.EventHandler(this.ChatTab_Load);
             this.ResumeLayout(false);
 
         }

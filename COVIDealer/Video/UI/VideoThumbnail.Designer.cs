@@ -30,10 +30,10 @@
         {
             this.contentPanel = new System.Windows.Forms.Panel();
             this.Summary = new System.Windows.Forms.RichTextBox();
-            this.UploadDate = new System.Windows.Forms.Label();
-            this.Channel = new System.Windows.Forms.Label();
             this.Tittle = new System.Windows.Forms.RichTextBox();
             this.ThumbnailImage = new System.Windows.Forms.PictureBox();
+            this.Channel = new System.Windows.Forms.Label();
+            this.UploadDate = new System.Windows.Forms.Label();
             this.contentPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ThumbnailImage)).BeginInit();
             this.SuspendLayout();
@@ -71,34 +71,6 @@
             this.Summary.MouseEnter += new System.EventHandler(this.contentPanel_MouseEnter);
             this.Summary.MouseLeave += new System.EventHandler(this.contentPanel_MouseLeave);
             // 
-            // UploadDate
-            // 
-            this.UploadDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UploadDate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.UploadDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.UploadDate.ForeColor = System.Drawing.Color.Gray;
-            this.UploadDate.Location = new System.Drawing.Point(325, 60);
-            this.UploadDate.Name = "UploadDate";
-            this.UploadDate.Size = new System.Drawing.Size(432, 23);
-            this.UploadDate.TabIndex = 14;
-            this.UploadDate.Text = "Upload Date";
-            this.UploadDate.MouseEnter += new System.EventHandler(this.contentPanel_MouseEnter);
-            this.UploadDate.MouseLeave += new System.EventHandler(this.contentPanel_MouseLeave);
-            // 
-            // Channel
-            // 
-            this.Channel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Channel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Channel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.Channel.ForeColor = System.Drawing.Color.Gray;
-            this.Channel.Location = new System.Drawing.Point(325, 85);
-            this.Channel.Name = "Channel";
-            this.Channel.Size = new System.Drawing.Size(432, 23);
-            this.Channel.TabIndex = 13;
-            this.Channel.Text = "Channel";
-            this.Channel.MouseEnter += new System.EventHandler(this.contentPanel_MouseEnter);
-            this.Channel.MouseLeave += new System.EventHandler(this.contentPanel_MouseLeave);
-            // 
             // Tittle
             // 
             this.Tittle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -130,6 +102,34 @@
             this.ThumbnailImage.MouseEnter += new System.EventHandler(this.contentPanel_MouseEnter);
             this.ThumbnailImage.MouseLeave += new System.EventHandler(this.contentPanel_MouseLeave);
             // 
+            // Channel
+            // 
+            this.Channel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Channel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Channel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Channel.ForeColor = System.Drawing.Color.Gray;
+            this.Channel.Location = new System.Drawing.Point(325, 85);
+            this.Channel.Name = "Channel";
+            this.Channel.Size = new System.Drawing.Size(432, 23);
+            this.Channel.TabIndex = 13;
+            this.Channel.Text = "Channel";
+            this.Channel.MouseEnter += new System.EventHandler(this.contentPanel_MouseEnter);
+            this.Channel.MouseLeave += new System.EventHandler(this.contentPanel_MouseLeave);
+            // 
+            // UploadDate
+            // 
+            this.UploadDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.UploadDate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UploadDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.UploadDate.ForeColor = System.Drawing.Color.Gray;
+            this.UploadDate.Location = new System.Drawing.Point(325, 60);
+            this.UploadDate.Name = "UploadDate";
+            this.UploadDate.Size = new System.Drawing.Size(432, 23);
+            this.UploadDate.TabIndex = 14;
+            this.UploadDate.Text = "Upload Date";
+            this.UploadDate.MouseEnter += new System.EventHandler(this.contentPanel_MouseEnter);
+            this.UploadDate.MouseLeave += new System.EventHandler(this.contentPanel_MouseLeave);
+            // 
             // VideoThumbnail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,9 +149,9 @@
 
         private System.Windows.Forms.Panel contentPanel;
         private System.Windows.Forms.RichTextBox Summary;
-        private System.Windows.Forms.Label UploadDate;
-        private System.Windows.Forms.Label Channel;
         private System.Windows.Forms.RichTextBox Tittle;
         private System.Windows.Forms.PictureBox ThumbnailImage;
+        private System.Windows.Forms.Label UploadDate;
+        private System.Windows.Forms.Label Channel;
     }
 }

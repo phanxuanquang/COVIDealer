@@ -68,7 +68,7 @@ namespace COVIDealer
 
         private void SearchTab_Button_Click(object sender, EventArgs e)
         {
-            this.Text = "COVIDealer - " + SearchTab_Button.Text;
+            this.Text = "COVIDealer - " + SearchTab_Button.Text;     
         }
 
         private void NewsTab_Button_Click(object sender, EventArgs e)

@@ -27,5 +27,18 @@ namespace COVIDealer
                 }
             }
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ChatTab_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 20; i++)
+            {
+                richTextBox1.Text += "Quang không biết lý do, ";
+            }
+        }
     }
 }

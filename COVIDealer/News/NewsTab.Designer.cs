@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.contentPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // contentPanel
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(26, 24);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(993, 555);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.contentPanel.AutoScroll = true;
+            this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contentPanel.Location = new System.Drawing.Point(0, 0);
+            this.contentPanel.Name = "contentPanel";
+            this.contentPanel.Size = new System.Drawing.Size(1118, 739);
+            this.contentPanel.TabIndex = 0;
             // 
             // NewsTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.richTextBox1);
-            this.DoubleBuffered = true;
+            this.Controls.Add(this.contentPanel);
             this.Name = "NewsTab";
             this.Size = new System.Drawing.Size(1118, 739);
             this.Load += new System.EventHandler(this.NewsTab_Load);
@@ -54,6 +54,6 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.FlowLayoutPanel contentPanel;
     }
 }

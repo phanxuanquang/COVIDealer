@@ -12,9 +12,13 @@ namespace COVIDealer
 {
     public partial class ChatTab : UserControl
     {
+        SaaUI.SaaChatBubble x = new SaaUI.SaaChatBubble();
+        SaaUI.SaaChatBubble y = new SaaUI.SaaChatBubble();
         public ChatTab()
         {
             InitializeComponent();
+            //
+            x.Width = this.Width / 2;
         }
 
         private void InputBox_KeyDown(object sender, KeyEventArgs e)
@@ -23,21 +27,25 @@ namespace COVIDealer
             {
                 if (e.KeyCode == Keys.Enter)
                 {
-                    InputBox.Text += System.Environment.NewLine;
+                    //InputBox.Text += System.Environment.NewLine;
                 }
             }
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void InputBox_KeyDown_1(object sender, KeyEventArgs e)
         {
-            
-        }
-
-        private void ChatTab_Load(object sender, EventArgs e)
-        {
-            for (int i = 0; i < 20; i++)
+            if (e.KeyCode == Keys.Enter)
             {
-                richTextBox1.Text += "Quang không biết lý do, ";
+                x.Width = this.Width / 2;
+                x.Body = "jhsdfjhsd";
+                chatArea.Controls.Add(x);
+            }
+            else if (e.Shift)
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    // Do something
+                }
             }
         }
     }

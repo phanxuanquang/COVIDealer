@@ -28,7 +28,7 @@ namespace COVIDealer
 
         string getChatGPTResponseFrom(string input)
         {
-            var YOUR_API_KEY = "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";
+            var YOUR_API_KEY = "";
             var client = new RestClient("https://api.openai.com/v1");
             var request = new RestRequest("engines/text-davinci-003/completions", Method.Post);
             request.AddHeader("Content-Type", "application/json");
@@ -101,6 +101,15 @@ namespace COVIDealer
                 isChatGPTOn = true;
                 MessageBox.Show("ChatGPT đã được bật. Từ giờ, ChatGPT sẽ là người giải đáp thắc mắc của bạn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+            ChatArea.Clear();
+            InputBox.Clear();
+            isChatGPTOn = false;
+            MainIcon.Visible = true;
+            this.Refresh();
         }
     }
 }

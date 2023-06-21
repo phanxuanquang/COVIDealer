@@ -18,30 +18,53 @@ namespace COVIDealer
 {
     public partial class ChatTab : UserControl
     {
-        SaaUI.SaaChatBubble x = new SaaUI.SaaChatBubble();
-        SaaUI.SaaChatBubble y = new SaaUI.SaaChatBubble();
         private readonly DialogFlowService service = new DialogFlowService("user", "covidealer-bot-aqob");
+        bool isChatGPTOn;
         public ChatTab()
         {
             InitializeComponent();
-            x.Width = this.Width / 2;
+            isChatGPTOn = false;
+        }
+
+        string getChatGPTResponseFrom(string input)
+        {
+            var YOUR_API_KEY = "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";
+            var client = new RestClient("https://api.openai.com/v1");
+            var request = new RestRequest("engines/text-davinci-003/completions", Method.Post);
+            request.AddHeader("Content-Type", "application/json");
+            request.AddHeader("Authorization", $"Bearer {YOUR_API_KEY}");
+            request.AddJsonBody(new { prompt = input, max_tokens = 4000, temperature = 0 });
+            var response = client.Execute(request);
+            var responseData = JObject.Parse(response.Content);
+            return responseData["choices"][0]["text"].ToString().Trim();
         }
         private async void SendButton_Click(object sender, EventArgs e)
         {
-            if (InputBox.Text != String.Empty)
+            if(InputBox.Text != String.Empty)
             {
-                var dialogflowQueryResult = await service.CheckIntent(InputBox.Text);
-                string responeMessage = dialogflowQueryResult.FulfillmentText;
+                MainIcon.Visible = false;
+                string requestString = InputBox.Text;
+                string responseString;
+                InputBox.Clear();
 
-                string clientText = "Client: " + InputBox.Text;
-                int length = ChatArea.TextLength; 
+                string clientText = "Client: " + requestString;
+                int length = ChatArea.TextLength;
                 ChatArea.AppendText(clientText + Environment.NewLine);
                 ChatArea.SelectionStart = length;
                 ChatArea.SelectionLength = clientText.Length;
-                ChatArea.SelectionColor = Color.Red;
+                ChatArea.SelectionColor = Color.FromArgb(57, 133, 248);
 
-                ChatArea.AppendText("COVIDealer: " + responeMessage + Environment.NewLine);
-                InputBox.Text = String.Empty;
+                if (!isChatGPTOn)
+                {
+                    var response = await service.CheckIntent(requestString);
+                    responseString = response.FulfillmentText;
+                    ChatArea.AppendText("COVIDealer: " + responseString + Environment.NewLine);
+                }
+                else
+                {
+                    responseString = getChatGPTResponseFrom("Hãy nhớ rằng tất cả lời nói của tôi đều liên quan đến bệnh COVID-19. " + requestString);
+                    ChatArea.AppendText("ChatGPT: " + responseString + Environment.NewLine);
+                }
             }
             else
             {
@@ -57,12 +80,26 @@ namespace COVIDealer
             {
                 SendButton_Click(this, null);
             }
-            else if (e.Shift)
+            else if (e.KeyCode == Keys.Escape)
             {
                 if (e.KeyCode == Keys.Enter)
                 {
-                    // Do something
+                    InputBox.Clear();
                 }
+            }
+        }
+
+        private void ChatGPTMode_Click(object sender, EventArgs e)
+        {
+            if (isChatGPTOn)
+            {
+                isChatGPTOn = false;
+                MessageBox.Show("ChatGPT đã được tắt. Từ giờ, COVIDealer sẽ là người giải đáp thắc mắc của bạn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                isChatGPTOn = true;
+                MessageBox.Show("ChatGPT đã được bật. Từ giờ, ChatGPT sẽ là người giải đáp thắc mắc của bạn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

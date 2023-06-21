@@ -91,12 +91,32 @@ namespace COVIDealer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon COVIDealer {
             get {
                 object obj = ResourceManager.GetObject("COVIDealer", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Main_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Main_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

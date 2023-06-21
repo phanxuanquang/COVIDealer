@@ -23,7 +23,8 @@ namespace COVIDealer
             InitializeComponent();
             this.Icon = Properties.Resources.COVIDealer;
 
-            StatisticsTab_Button_Click(this, null);
+            //StatisticsTab_Button_Click(this, null);
+            ChatTab_Button_Click(this, null);
         }
         protected override CreateParams CreateParams
         {
@@ -64,11 +65,6 @@ namespace COVIDealer
             }
             this.Text = "COVIDealer - " + StatisticsTab_Button.Text;
             loadTab(statisticTab);
-        }
-
-        private void SearchTab_Button_Click(object sender, EventArgs e)
-        {
-            this.Text = "COVIDealer - " + SearchTab_Button.Text;     
         }
 
         private void NewsTab_Button_Click(object sender, EventArgs e)

@@ -71,6 +71,26 @@ namespace COVIDealer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chat_AI {
+            get {
+                object obj = ResourceManager.GetObject("Chat_AI", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chat_Me {
+            get {
+                object obj = ResourceManager.GetObject("Chat_Me", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon COVIDealer {
@@ -103,9 +123,29 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Send {
+            get {
+                object obj = ResourceManager.GetObject("Send", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Statistic {
             get {
                 object obj = ResourceManager.GetObject("Statistic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Text_Input {
+            get {
+                object obj = ResourceManager.GetObject("Text_Input", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

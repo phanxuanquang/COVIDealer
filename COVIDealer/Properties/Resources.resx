@@ -121,6 +121,12 @@
   <data name="Chat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Chat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Chat_AI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Chat-AI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chat_Me" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Chat-Me.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="COVIDealer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\COVIDealer.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,8 +136,14 @@
   <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Send" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Send.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Statistic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Statistic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Text_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Text Input.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Video" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Video.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

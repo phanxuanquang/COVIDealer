@@ -21,7 +21,7 @@ namespace COVIDealer
         public MainWindows()  
         {
             InitializeComponent();
-            this.Icon = Properties.Resources.COVIDealer;
+            this.Icon = Properties.Resources.Icon;
 
             //StatisticsTab_Button_Click(this, null);
             ChatTab_Button_Click(this, null);

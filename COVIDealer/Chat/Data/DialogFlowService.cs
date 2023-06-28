@@ -29,7 +29,7 @@ namespace COVIDealer.Chat
 
         }
 
-        public async Task<QueryResult> CheckIntent(string userInput, string LanguageCode = "vi")
+        public async Task<QueryResult> CheckIntent(string userInput, string LanguageCode = "en")
         {
             await CreateSession();
             QueryInput queryInput = new QueryInput();

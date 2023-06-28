@@ -18,7 +18,7 @@ namespace COVIDealer
 {
     public partial class ChatTab : UserControl
     {
-        private readonly DialogFlowService service = new DialogFlowService("user", "covidealer-bot-aqob");
+        private readonly DialogFlowService service = new DialogFlowService("user", "testagent-xdib");
         public ChatTab()
         {
             InitializeComponent();

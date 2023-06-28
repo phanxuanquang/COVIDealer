@@ -165,6 +165,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chat\Data\DialogFlowService.cs" />
+    <Compile Include="Chat\InputKeyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\InputKeyForm.Designer.cs">
+      <DependentUpon>InputKeyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="News\ArticleThumbnail.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -182,18 +188,6 @@
     </Compile>
     <Compile Include="News\NewsTab.Designer.cs">
       <DependentUpon>NewsTab.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Chat\RequestBubble.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Chat\RequestBubble.Designer.cs">
-      <DependentUpon>RequestBubble.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Chat\ResponseBubble.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Chat\ResponseBubble.Designer.cs">
-      <DependentUpon>ResponseBubble.cs</DependentUpon>
     </Compile>
     <Compile Include="Video\UI\VideoTab.cs">
       <SubType>UserControl</SubType>
@@ -237,6 +231,9 @@
     <Compile Include="Statistic\Data\World.cs" />
     <Compile Include="Video\Data\Thumbnails.cs" />
     <Compile Include="Video\Data\VideoData.cs" />
+    <EmbeddedResource Include="Chat\InputKeyForm.resx">
+      <DependentUpon>InputKeyForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="News\ArticleThumbnail.resx">
       <DependentUpon>ArticleThumbnail.cs</DependentUpon>
     </EmbeddedResource>
@@ -259,12 +256,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Chat\RequestBubble.resx">
-      <DependentUpon>RequestBubble.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Chat\ResponseBubble.resx">
-      <DependentUpon>ResponseBubble.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Statistic\UI\StatisticTab.resx">
       <DependentUpon>StatisticTab.cs</DependentUpon>
     </EmbeddedResource>

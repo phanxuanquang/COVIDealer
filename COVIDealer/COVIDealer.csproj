@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Google.Api.CommonProtos, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
@@ -166,6 +170,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AboutTab.Designer.cs">
+      <DependentUpon>AboutTab.cs</DependentUpon>
+    </Compile>
     <Compile Include="Chat\Data\DialogFlowService.cs" />
     <Compile Include="News\ArticleThumbnail.cs">
       <SubType>UserControl</SubType>
@@ -227,6 +237,9 @@
     <Compile Include="Statistic\Data\World.cs" />
     <Compile Include="Video\Data\Thumbnails.cs" />
     <Compile Include="Video\Data\VideoData.cs" />
+    <EmbeddedResource Include="AboutTab.resx">
+      <DependentUpon>AboutTab.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="News\ArticleThumbnail.resx">
       <DependentUpon>ArticleThumbnail.cs</DependentUpon>
     </EmbeddedResource>
@@ -325,6 +338,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Icons\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Selenium.WebDriver.4.9.0\build\Selenium.WebDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.4.9.0\build\Selenium.WebDriver.targets')" />

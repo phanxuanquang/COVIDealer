@@ -81,6 +81,7 @@
             this.AboutTab_Button.TabIndex = 6;
             this.AboutTab_Button.Text = "SẢN PHẨM";
             this.toolTip.SetToolTip(this.AboutTab_Button, "Thông tin phần mềm");
+            this.AboutTab_Button.Visible = false;
             this.AboutTab_Button.Click += new System.EventHandler(this.AboutTab_Button_Click);
             // 
             // VideoTab_Button

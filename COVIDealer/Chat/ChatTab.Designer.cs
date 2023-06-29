@@ -75,6 +75,7 @@
             this.ResetButton.ShadowDecoration.Parent = this.ResetButton;
             this.ResetButton.Size = new System.Drawing.Size(87, 51);
             this.ResetButton.TabIndex = 24;
+            this.toolTip.SetToolTip(this.ResetButton, "Xóa nội dung trò chuyện");
             this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
             // InputBox
@@ -111,6 +112,7 @@
             this.InputBox.Size = new System.Drawing.Size(1469, 51);
             this.InputBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.InputBox.TabIndex = 20;
+            this.toolTip.SetToolTip(this.InputBox, "Nhập câu hỏi của bạn vào đây để Chatbot có thể trả lời.");
             this.InputBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.InputBox_KeyDown);
             // 
             // SendButton

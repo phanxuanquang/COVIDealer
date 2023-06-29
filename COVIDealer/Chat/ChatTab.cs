@@ -19,6 +19,7 @@ using System.Web;
 using System.Net.Http;
 using Newtonsoft.Json;
 using System.Text.Json.Nodes;
+using System.Text.RegularExpressions;
 
 namespace COVIDealer
 {
@@ -32,7 +33,6 @@ namespace COVIDealer
 
         public async Task<string> getTranslationFrom(String inputString, string inputLanguage, string outputLanguage)
         {
-
             try
             {
                 HttpClient httpClient = new HttpClient();
@@ -54,7 +54,7 @@ namespace COVIDealer
             {
                 MainIcon.Visible = false;
                 string requestString = InputBox.Text.Trim();
-                string responseString;
+                string responseString = String.Empty;
                 InputBox.Clear();
 
                 string clientText = "Client: " + requestString;
@@ -66,22 +66,27 @@ namespace COVIDealer
 
                 try
                 {
-                    string newRequest = await getTranslationFrom(requestString, "vi", "en");
+                    string engRequest = await getTranslationFrom(requestString, "vi", "en");
 
-                    var response = await service.CheckIntent(newRequest, "en");
+                    var engResponse = await service.CheckIntent(engRequest, "en");
 
-                    responseString = await getTranslationFrom(response.FulfillmentText, "en", "vi");
+                    responseString = await getTranslationFrom(engResponse.FulfillmentText, "en", "vi");
 
-                    ChatArea.AppendText("COVIDealer: " + responseString + Environment.NewLine);
+                    if (responseString == String.Empty)
+                    {
+                        ChatArea.AppendText("COVIDealer: Xin lỗi, tôi chưa tìm được câu trả lời. Vui lòng thử lại." + Environment.NewLine);
+                    }
+                    else ChatArea.AppendText("COVIDealer: " + responseString + Environment.NewLine);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    string errorMessage = await getTranslationFrom(ex.Message, "en", "vi");
+                    MessageBox.Show($"Lỗi phân tích câu hỏi. Vui lòng thử lại sau.\nLỗi được phát hiện là: {errorMessage}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập thắc mắc của bạn để được giải đáp!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập thắc mắc của bạn để được giải đáp.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             
         }

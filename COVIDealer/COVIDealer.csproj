@@ -240,7 +240,7 @@
       <DependentUpon>NewsTab.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -322,6 +322,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Icons\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\About.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Selenium.WebDriver.4.9.0\build\Selenium.WebDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.4.9.0\build\Selenium.WebDriver.targets')" />

@@ -22,7 +22,7 @@ namespace COVIDealer.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace COVIDealer.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("COVIDealer.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace COVIDealer.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,17 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Chat {
+        public static System.Drawing.Bitmap About {
+            get {
+                object obj = ResourceManager.GetObject("About", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Chat {
             get {
                 object obj = ResourceManager.GetObject("Chat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +83,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Chat_AI {
+        public static System.Drawing.Bitmap Chat_AI {
             get {
                 object obj = ResourceManager.GetObject("Chat_AI", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +93,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Chat_Me {
+        public static System.Drawing.Bitmap Chat_Me {
             get {
                 object obj = ResourceManager.GetObject("Chat_Me", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +103,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ChatGPT {
+        public static System.Drawing.Bitmap ChatGPT {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +113,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon COVIDealer {
+        public static System.Drawing.Icon COVIDealer {
             get {
                 object obj = ResourceManager.GetObject("COVIDealer", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -113,7 +123,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon Icon {
+        public static System.Drawing.Icon Icon {
             get {
                 object obj = ResourceManager.GetObject("Icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -123,7 +133,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Main_Icon {
+        public static System.Drawing.Bitmap Main_Icon {
             get {
                 object obj = ResourceManager.GetObject("Main_Icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +143,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap News {
+        public static System.Drawing.Bitmap News {
             get {
                 object obj = ResourceManager.GetObject("News", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +153,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Reset {
+        public static System.Drawing.Bitmap Reset {
             get {
                 object obj = ResourceManager.GetObject("Reset", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +163,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Search {
+        public static System.Drawing.Bitmap Search {
             get {
                 object obj = ResourceManager.GetObject("Search", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +173,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Send {
+        public static System.Drawing.Bitmap Send {
             get {
                 object obj = ResourceManager.GetObject("Send", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +183,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Statistic {
+        public static System.Drawing.Bitmap Statistic {
             get {
                 object obj = ResourceManager.GetObject("Statistic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +193,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Text_Input {
+        public static System.Drawing.Bitmap Text_Input {
             get {
                 object obj = ResourceManager.GetObject("Text_Input", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +203,7 @@ namespace COVIDealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Video {
+        public static System.Drawing.Bitmap Video {
             get {
                 object obj = ResourceManager.GetObject("Video", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

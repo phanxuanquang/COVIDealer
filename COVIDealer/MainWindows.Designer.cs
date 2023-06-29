@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.MenuPanel = new System.Windows.Forms.Panel();
+            this.AboutTab_Button = new Guna.UI.WinForms.GunaTileButton();
             this.VideoTab_Button = new Guna.UI.WinForms.GunaTileButton();
             this.NewsTab_Button = new Guna.UI.WinForms.GunaTileButton();
             this.StatisticsTab_Button = new Guna.UI.WinForms.GunaTileButton();
@@ -42,6 +43,7 @@
             // MenuPanel
             // 
             this.MenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(133)))), ((int)(((byte)(248)))));
+            this.MenuPanel.Controls.Add(this.AboutTab_Button);
             this.MenuPanel.Controls.Add(this.VideoTab_Button);
             this.MenuPanel.Controls.Add(this.NewsTab_Button);
             this.MenuPanel.Controls.Add(this.StatisticsTab_Button);
@@ -52,6 +54,34 @@
             this.MenuPanel.Name = "MenuPanel";
             this.MenuPanel.Size = new System.Drawing.Size(195, 1171);
             this.MenuPanel.TabIndex = 0;
+            // 
+            // AboutTab_Button
+            // 
+            this.AboutTab_Button.Animated = true;
+            this.AboutTab_Button.AnimationHoverSpeed = 0.07F;
+            this.AboutTab_Button.AnimationSpeed = 0.03F;
+            this.AboutTab_Button.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(133)))), ((int)(((byte)(248)))));
+            this.AboutTab_Button.BorderColor = System.Drawing.Color.Black;
+            this.AboutTab_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.AboutTab_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AboutTab_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.AboutTab_Button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.AboutTab_Button.ForeColor = System.Drawing.Color.White;
+            this.AboutTab_Button.Image = global::COVIDealer.Properties.Resources.About;
+            this.AboutTab_Button.ImageSize = new System.Drawing.Size(52, 52);
+            this.AboutTab_Button.Location = new System.Drawing.Point(0, 800);
+            this.AboutTab_Button.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AboutTab_Button.Name = "AboutTab_Button";
+            this.AboutTab_Button.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(105)))), ((int)(((byte)(196)))));
+            this.AboutTab_Button.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.AboutTab_Button.OnHoverForeColor = System.Drawing.Color.White;
+            this.AboutTab_Button.OnHoverImage = null;
+            this.AboutTab_Button.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
+            this.AboutTab_Button.Size = new System.Drawing.Size(195, 200);
+            this.AboutTab_Button.TabIndex = 6;
+            this.AboutTab_Button.Text = "SẢN PHẨM";
+            this.toolTip.SetToolTip(this.AboutTab_Button, "Thông tin phần mềm");
+            this.AboutTab_Button.Click += new System.EventHandler(this.AboutTab_Button_Click);
             // 
             // VideoTab_Button
             // 
@@ -208,6 +238,7 @@
         private Guna.UI.WinForms.GunaTileButton VideoTab_Button;
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.ToolTip toolTip;
+        private Guna.UI.WinForms.GunaTileButton AboutTab_Button;
     }
 }
 

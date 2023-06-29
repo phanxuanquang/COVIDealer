@@ -86,6 +86,12 @@ namespace COVIDealer
             this.Text = "COVIDealer - " + VideoTab_Button.Text;
             loadTab(videoTab);
         }
+        private void AboutTab_Button_Click(object sender, EventArgs e)
+        {
+
+        }
         #endregion
+
+
     }
 }

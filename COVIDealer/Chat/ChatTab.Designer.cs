@@ -103,7 +103,6 @@
             this.InputBox.IconLeft = global::COVIDealer.Properties.Resources.Text_Input;
             this.InputBox.Location = new System.Drawing.Point(9, 1071);
             this.InputBox.Margin = new System.Windows.Forms.Padding(9);
-            this.InputBox.Multiline = true;
             this.InputBox.Name = "InputBox";
             this.InputBox.PasswordChar = '\0';
             this.InputBox.PlaceholderText = "Thắc mắc của bạn . . .";

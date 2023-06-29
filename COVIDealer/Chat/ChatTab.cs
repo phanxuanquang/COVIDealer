@@ -18,6 +18,7 @@ using System.Net;
 using System.Web;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Text.Json.Nodes;
 
 namespace COVIDealer
 {
@@ -31,27 +32,18 @@ namespace COVIDealer
 
         public async Task<string> getTranslationFrom(String inputString, string inputLanguage, string outputLanguage)
         {
-            var url = $"https://translate.googleapis.com/translate_a/single?client=gtx&sl={inputLanguage}&tl={outputLanguage}&dt=t&q={HttpUtility.UrlEncode(inputString)}";
-            var webclient = new WebClient
-            {
-                Encoding = System.Text.Encoding.UTF8
-            };
-            string translatedText = String.Empty;
 
-            using (HttpClient client = new HttpClient())
-            {
-                 translatedText = await client.GetStringAsync(url);
-            }
-
-            //string translatedText = webclient.DownloadString(url);
             try
             {
-                //return translatedText.Substring(4, translatedText.IndexOf("\"", 4, StringComparison.Ordinal) - 4);
-                return translatedText;
+                HttpClient httpClient = new HttpClient();
+                var response = await httpClient.GetAsync($"https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl={inputLanguage}&tl={outputLanguage}&q={Uri.EscapeUriString(inputString)}");
+                string result;
+                JsonObject.Parse(await response.Content.ReadAsStringAsync()).AsArray().First().AsValue().TryGetValue<string>(out result);
+                return result;
             }
-            catch
+            catch (Exception ex)
             {
-                return "Có lỗi phát sinh. Vui lòng thử lại.";
+                return ex.Message;
             }
 
         }
@@ -70,18 +62,17 @@ namespace COVIDealer
                 ChatArea.AppendText(clientText + Environment.NewLine);
                 ChatArea.SelectionStart = length;
                 ChatArea.SelectionLength = clientText.Length;
-                ChatArea.SelectionColor = Color.FromArgb(57, 133, 248);
+                ChatArea.SelectionColor = Color.Blue;
 
                 try
                 {
                     string newRequest = await getTranslationFrom(requestString, "vi", "en");
 
-                    //var response = await service.CheckIntent(newRequest, "en");
-                    //var response = await service.CheckIntent(requestString, "en");
+                    var response = await service.CheckIntent(newRequest, "en");
 
-                    //responseString = await getTranslationFrom(response.FulfillmentText, "en", "vi");
+                    responseString = await getTranslationFrom(response.FulfillmentText, "en", "vi");
 
-                    ChatArea.AppendText("COVIDealer: " + newRequest + Environment.NewLine);
+                    ChatArea.AppendText("COVIDealer: " + responseString + Environment.NewLine);
                 }
                 catch (Exception ex)
                 {

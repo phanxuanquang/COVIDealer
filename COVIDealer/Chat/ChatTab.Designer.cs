@@ -40,9 +40,11 @@
             // 
             // ChatArea
             // 
+            this.ChatArea.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ChatArea.BackColor = System.Drawing.Color.White;
             this.ChatArea.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ChatArea.Dock = System.Windows.Forms.DockStyle.Top;
             this.ChatArea.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.ChatArea.Location = new System.Drawing.Point(0, 0);
             this.ChatArea.Name = "ChatArea";
@@ -100,6 +102,7 @@
             this.InputBox.IconLeft = global::COVIDealer.Properties.Resources.Text_Input;
             this.InputBox.Location = new System.Drawing.Point(9, 1071);
             this.InputBox.Margin = new System.Windows.Forms.Padding(9);
+            this.InputBox.Multiline = true;
             this.InputBox.Name = "InputBox";
             this.InputBox.PasswordChar = '\0';
             this.InputBox.PlaceholderText = "Thắc mắc của bạn . . .";

@@ -1,25 +1,21 @@
-﻿using System;
+﻿using HtmlAgilityPack;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.IO.Compression;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using HtmlAgilityPack;
-using System.Net.Http;
 using System.Web;
-using System.Runtime.CompilerServices;
-using System.Security.Policy;
+using System.Windows.Forms;
 
 namespace COVIDealer
 {
     public partial class NewsTab : UserControl
     {
-        
+
         public NewsTab()
         {
             InitializeComponent();
@@ -28,12 +24,12 @@ namespace COVIDealer
         private async void NewsTab_Load(object sender, EventArgs e)
         {
             List<HtmlNode> nodes = new List<HtmlNode>();
-            for(int index = 1; index <= 5; index++)
+            for (int index = 1; index <= 5; index++)
             {
                 List<HtmlNode> task = await getDataFrom($"https://covid19.gov.vn/timelinelist/1711566/{index}.htm");
                 nodes.AddRange(task);
             }
-            foreach(var item in nodes.Select(item => new ArticleThumbnail(item)))
+            foreach (var item in nodes.Select(item => new ArticleThumbnail(item)))
             {
                 contentPanel.Controls.Add(item);
             }

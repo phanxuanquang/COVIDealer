@@ -1,13 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 
 namespace COVIDealer
@@ -18,7 +9,7 @@ namespace COVIDealer
         StatisticTab statisticTab = null;
         VideoTab videoTab = null;
         NewsTab newsTab = null;
-        public MainWindows()  
+        public MainWindows()
         {
             InitializeComponent();
             this.Icon = Properties.Resources.Icon;
@@ -31,7 +22,7 @@ namespace COVIDealer
             get
             {
                 CreateParams handleParam = base.CreateParams;
-                handleParam.ExStyle |= 0x02000000;          
+                handleParam.ExStyle |= 0x02000000;
                 return handleParam;
             }
         }
@@ -52,9 +43,9 @@ namespace COVIDealer
             {
                 chatTab = new ChatTab();
             }
-            this.Text = "COVIDealer - " + ChatTab_Button.Text; 
-            loadTab(chatTab);  
-            
+            this.Text = "COVIDealer - " + ChatTab_Button.Text;
+            loadTab(chatTab);
+
         }
 
         private void StatisticsTab_Button_Click(object sender, EventArgs e)
@@ -71,7 +62,7 @@ namespace COVIDealer
         {
             if (newsTab == null)
             {
-                newsTab = new NewsTab();           
+                newsTab = new NewsTab();
             }
             this.Text = "COVIDealer - " + NewsTab_Button.Text;
             loadTab(newsTab);

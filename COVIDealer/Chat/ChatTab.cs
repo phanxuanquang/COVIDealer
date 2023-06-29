@@ -1,25 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using COVIDealer.Chat;
+using System;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Text.Json;
+using System.Net.Http;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Newtonsoft.Json.Linq;
-using RestSharp;
-using System.Xml.Linq;
-using COVIDealer.Chat;
-using SaaUI;
-using System.Windows.Forms.DataVisualization.Charting;
-using System.Net;
-using System.Web;
-using System.Net.Http;
-using Newtonsoft.Json;
-using System.Text.Json.Nodes;
-using System.Text.RegularExpressions;
 
 namespace COVIDealer
 {
@@ -50,7 +36,7 @@ namespace COVIDealer
 
         private async void SendButton_Click(object sender, EventArgs e)
         {
-            if(InputBox.Text != String.Empty)
+            if (InputBox.Text != String.Empty)
             {
                 MainIcon.Visible = false;
                 string requestString = InputBox.Text.Trim();
@@ -88,7 +74,7 @@ namespace COVIDealer
             {
                 MessageBox.Show("Vui lòng nhập thắc mắc của bạn để được giải đáp.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            
+
         }
 
         private void InputBox_KeyDown(object sender, KeyEventArgs e)

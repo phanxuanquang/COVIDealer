@@ -79,7 +79,7 @@
             this.AboutTab_Button.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
             this.AboutTab_Button.Size = new System.Drawing.Size(195, 200);
             this.AboutTab_Button.TabIndex = 6;
-            this.AboutTab_Button.Tag = "110396123";
+            this.AboutTab_Button.Tag = "1.0.0";
             this.AboutTab_Button.Text = "CẬP NHẬT";
             this.toolTip.SetToolTip(this.AboutTab_Button, "Cập nhật phần mềm");
             this.AboutTab_Button.Click += new System.EventHandler(this.AboutTab_Button_Click);

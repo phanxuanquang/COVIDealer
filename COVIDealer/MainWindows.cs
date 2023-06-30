@@ -90,7 +90,7 @@ namespace COVIDealer
                 LatestReleaseInfo.Infor latestReleaseInfo = JsonConvert.DeserializeObject<LatestReleaseInfo.Infor>(await response.Content.ReadAsStringAsync());
 
 
-                if (AboutTab_Button.Tag.ToString() != latestReleaseInfo.Id.ToString())
+                if (AboutTab_Button.Tag.ToString() == latestReleaseInfo.TagName)
                 {
                     MessageBox.Show("Bạn đang sử dụng phiên bản mới nhất.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -106,7 +106,7 @@ namespace COVIDealer
             }
             catch
             {
-                MessageBox.Show("Cập nhật thất bại, vui lòng thử lại sau.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Cập nhật thất bại, vui lòng thử lại sau.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);   
             }
         }
 

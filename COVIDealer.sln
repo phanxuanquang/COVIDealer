@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COVIDealer", "COVIDealer\COVIDealer.csproj", "{1D1C0C3B-2230-4CBB-AC1B-BDD438B11253}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "COVIDealer 1.0.0", "COVIDealer 1.0.0\COVIDealer 1.0.0.vdproj", "{D12E8BEE-4871-4F28-BE70-37986676568F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{1D1C0C3B-2230-4CBB-AC1B-BDD438B11253}.Release|x64.Build.0 = Release|Any CPU
 		{1D1C0C3B-2230-4CBB-AC1B-BDD438B11253}.Release|x86.ActiveCfg = Release|Any CPU
 		{1D1C0C3B-2230-4CBB-AC1B-BDD438B11253}.Release|x86.Build.0 = Release|Any CPU
+		{D12E8BEE-4871-4F28-BE70-37986676568F}.Debug|Any CPU.ActiveCfg = Debug
+		{D12E8BEE-4871-4F28-BE70-37986676568F}.Debug|x64.ActiveCfg = Debug
+		{D12E8BEE-4871-4F28-BE70-37986676568F}.Debug|x86.ActiveCfg = Debug
+		{D12E8BEE-4871-4F28-BE70-37986676568F}.Release|Any CPU.ActiveCfg = Release
+		{D12E8BEE-4871-4F28-BE70-37986676568F}.Release|x64.ActiveCfg = Release
+		{D12E8BEE-4871-4F28-BE70-37986676568F}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -79,9 +79,9 @@
             this.AboutTab_Button.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
             this.AboutTab_Button.Size = new System.Drawing.Size(195, 200);
             this.AboutTab_Button.TabIndex = 6;
-            this.AboutTab_Button.Text = "SẢN PHẨM";
-            this.toolTip.SetToolTip(this.AboutTab_Button, "Thông tin phần mềm");
-            this.AboutTab_Button.Visible = false;
+            this.AboutTab_Button.Tag = "110396123";
+            this.AboutTab_Button.Text = "CẬP NHẬT";
+            this.toolTip.SetToolTip(this.AboutTab_Button, "Cập nhật phần mềm");
             this.AboutTab_Button.Click += new System.EventHandler(this.AboutTab_Button_Click);
             // 
             // VideoTab_Button
@@ -215,8 +215,8 @@
             // 
             // MainWindows
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1896, 1171);
             this.Controls.Add(this.mainPanel);
@@ -224,7 +224,8 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainWindows";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "COVIDealer - Theo dõi tình hình COVID-19 tại Việt Nam";
+            this.Text = "COVIDealer";
+            this.Load += new System.EventHandler(this.MainWindows_Load);
             this.MenuPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 

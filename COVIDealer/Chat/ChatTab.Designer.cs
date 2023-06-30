@@ -45,6 +45,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ChatArea.BackColor = System.Drawing.Color.White;
             this.ChatArea.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ChatArea.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ChatArea.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.ChatArea.Location = new System.Drawing.Point(0, 0);
             this.ChatArea.Name = "ChatArea";
@@ -62,7 +63,6 @@
             this.ResetButton.CheckedState.FillColor = System.Drawing.Color.Green;
             this.ResetButton.CheckedState.ForeColor = System.Drawing.Color.White;
             this.ResetButton.CheckedState.Parent = this.ResetButton;
-            this.ResetButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ResetButton.CustomImages.Parent = this.ResetButton;
             this.ResetButton.FillColor = System.Drawing.Color.Crimson;
             this.ResetButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -87,7 +87,6 @@
             this.InputBox.BackColor = System.Drawing.Color.Gainsboro;
             this.InputBox.BorderRadius = 5;
             this.InputBox.BorderThickness = 2;
-            this.InputBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.InputBox.DefaultText = "";
             this.InputBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.InputBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -122,7 +121,6 @@
             this.SendButton.CheckedState.FillColor = System.Drawing.Color.Green;
             this.SendButton.CheckedState.ForeColor = System.Drawing.Color.White;
             this.SendButton.CheckedState.Parent = this.SendButton;
-            this.SendButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SendButton.CustomImages.Parent = this.SendButton;
             this.SendButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(133)))), ((int)(((byte)(248)))));
             this.SendButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

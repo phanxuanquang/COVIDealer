@@ -45,7 +45,7 @@ namespace COVIDealer
 
                 string clientText = "Client: " + requestString;
                 int length = ChatArea.TextLength;
-                ChatArea.AppendText(clientText + Environment.NewLine);
+                ChatArea.AppendText(clientText + Environment.NewLine + Environment.NewLine);
                 ChatArea.SelectionStart = length;
                 ChatArea.SelectionLength = clientText.Length;
                 ChatArea.SelectionColor = Color.Blue;
@@ -58,16 +58,12 @@ namespace COVIDealer
 
                     responseString = await getTranslationFrom(engResponse.FulfillmentText, "en", "vi");
 
-                    if (responseString == String.Empty)
-                    {
-                        ChatArea.AppendText("COVIDealer: Xin lỗi, tôi chưa tìm được câu trả lời. Vui lòng thử lại." + Environment.NewLine);
-                    }
-                    else ChatArea.AppendText("COVIDealer: " + responseString + Environment.NewLine);
+                    ChatArea.AppendText("𝐂𝐎𝐕𝐈𝐃𝐞𝐚𝐥𝐞𝐫: " + responseString + Environment.NewLine + Environment.NewLine);
                 }
                 catch (Exception ex)
                 {
                     string errorMessage = await getTranslationFrom(ex.Message, "en", "vi");
-                    MessageBox.Show($"Lỗi phân tích câu hỏi. Vui lòng thử lại sau.\nLỗi được phát hiện là: {errorMessage}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show($"Lỗi phân tích câu hỏi. Vui lòng thử lại sau.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else

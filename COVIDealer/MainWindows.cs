@@ -106,7 +106,7 @@ namespace COVIDealer
             }
             catch
             {
-                MessageBox.Show("Cập nhật thất bại, vui lòng thử lại sau.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);   
+                MessageBox.Show("Cập nhật thất bại, vui lòng thử lại sau.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

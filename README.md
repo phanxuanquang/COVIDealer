@@ -26,5 +26,9 @@ ____________________________
 * **[YouTube for Developer](https://developers.google.com/youtube)** is used for analyzing and querying real-time data on the YouTube platform, serving the function of updating news video content.
 * **RESTful APIs** are used to query real-time data from third parties, serving the purpose of updating news, bulletins, and update packages.
 ## 6. Documentation and Download:
-* **Vietnamese version:** (Upcoming)
+* **Documentation (Vietnamese version only):** [Github](https://github.com/phanxuanquang/COVIDealer/blob/master/Documentation.pdf)
 * **Download:** [Github](https://github.com/phanxuanquang/COVIDealer/releases/latest)
+## 7. Demonstration
+![alt text](https://i.imgur.com/RI86UWj.png)
+![alt text](https://i.imgur.com/43KZRoc.png)
+![alt text](https://i.imgur.com/aR78G3J.png)

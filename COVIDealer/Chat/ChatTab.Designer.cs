@@ -69,11 +69,11 @@
             this.ResetButton.ForeColor = System.Drawing.Color.White;
             this.ResetButton.HoverState.Parent = this.ResetButton;
             this.ResetButton.Image = global::COVIDealer.Properties.Resources.Reset;
-            this.ResetButton.Location = new System.Drawing.Point(1586, 1071);
+            this.ResetButton.Location = new System.Drawing.Point(1586, 1070);
             this.ResetButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ResetButton.Name = "ResetButton";
             this.ResetButton.ShadowDecoration.Parent = this.ResetButton;
-            this.ResetButton.Size = new System.Drawing.Size(87, 51);
+            this.ResetButton.Size = new System.Drawing.Size(87, 52);
             this.ResetButton.TabIndex = 24;
             this.toolTip.SetToolTip(this.ResetButton, "Xóa nội dung trò chuyện");
             this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
@@ -87,6 +87,7 @@
             this.InputBox.BackColor = System.Drawing.Color.Gainsboro;
             this.InputBox.BorderRadius = 5;
             this.InputBox.BorderThickness = 2;
+            this.InputBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.InputBox.DefaultText = "";
             this.InputBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.InputBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -100,14 +101,14 @@
             this.InputBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.InputBox.HoverState.Parent = this.InputBox;
             this.InputBox.IconLeft = global::COVIDealer.Properties.Resources.Text_Input;
-            this.InputBox.Location = new System.Drawing.Point(9, 1071);
+            this.InputBox.Location = new System.Drawing.Point(9, 1070);
             this.InputBox.Margin = new System.Windows.Forms.Padding(9);
             this.InputBox.Name = "InputBox";
             this.InputBox.PasswordChar = '\0';
             this.InputBox.PlaceholderText = "Thắc mắc của bạn . . .";
             this.InputBox.SelectedText = "";
             this.InputBox.ShadowDecoration.Parent = this.InputBox;
-            this.InputBox.Size = new System.Drawing.Size(1469, 51);
+            this.InputBox.Size = new System.Drawing.Size(1469, 52);
             this.InputBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.InputBox.TabIndex = 20;
             this.toolTip.SetToolTip(this.InputBox, "Nhập câu hỏi của bạn vào đây để Chatbot có thể trả lời.");
@@ -127,11 +128,11 @@
             this.SendButton.ForeColor = System.Drawing.Color.White;
             this.SendButton.HoverState.Parent = this.SendButton;
             this.SendButton.Image = global::COVIDealer.Properties.Resources.Send;
-            this.SendButton.Location = new System.Drawing.Point(1491, 1071);
+            this.SendButton.Location = new System.Drawing.Point(1491, 1070);
             this.SendButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SendButton.Name = "SendButton";
             this.SendButton.ShadowDecoration.Parent = this.SendButton;
-            this.SendButton.Size = new System.Drawing.Size(87, 51);
+            this.SendButton.Size = new System.Drawing.Size(87, 52);
             this.SendButton.TabIndex = 19;
             this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
             // 

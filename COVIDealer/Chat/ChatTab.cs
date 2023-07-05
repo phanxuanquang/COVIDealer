@@ -59,6 +59,8 @@ namespace COVIDealer
                     responseString = await getTranslationFrom(engResponse.FulfillmentText, "en", "vi");
 
                     ChatArea.AppendText("𝐂𝐎𝐕𝐈𝐃𝐞𝐚𝐥𝐞𝐫: " + responseString + Environment.NewLine + Environment.NewLine);
+                    ChatArea.SelectionStart = ChatArea.Text.Length;
+                    ChatArea.ScrollToCaret();
                 }
                 catch (Exception ex)
                 {

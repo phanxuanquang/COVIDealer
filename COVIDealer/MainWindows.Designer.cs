@@ -50,9 +50,8 @@
             this.MenuPanel.Controls.Add(this.ChatTab_Button);
             this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuPanel.Location = new System.Drawing.Point(0, 0);
-            this.MenuPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MenuPanel.Name = "MenuPanel";
-            this.MenuPanel.Size = new System.Drawing.Size(195, 1344);
+            this.MenuPanel.Size = new System.Drawing.Size(130, 995);
             this.MenuPanel.TabIndex = 0;
             // 
             // AboutTab_Button
@@ -69,15 +68,14 @@
             this.AboutTab_Button.ForeColor = System.Drawing.Color.White;
             this.AboutTab_Button.Image = global::COVIDealer.Properties.Resources.About;
             this.AboutTab_Button.ImageSize = new System.Drawing.Size(52, 52);
-            this.AboutTab_Button.Location = new System.Drawing.Point(0, 800);
-            this.AboutTab_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AboutTab_Button.Location = new System.Drawing.Point(0, 532);
             this.AboutTab_Button.Name = "AboutTab_Button";
             this.AboutTab_Button.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(105)))), ((int)(((byte)(196)))));
             this.AboutTab_Button.OnHoverBorderColor = System.Drawing.Color.Black;
             this.AboutTab_Button.OnHoverForeColor = System.Drawing.Color.White;
             this.AboutTab_Button.OnHoverImage = null;
             this.AboutTab_Button.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.AboutTab_Button.Size = new System.Drawing.Size(195, 200);
+            this.AboutTab_Button.Size = new System.Drawing.Size(130, 133);
             this.AboutTab_Button.TabIndex = 6;
             this.AboutTab_Button.Tag = "1.0.0";
             this.AboutTab_Button.Text = "CẬP NHẬT";
@@ -98,15 +96,14 @@
             this.VideoTab_Button.ForeColor = System.Drawing.Color.White;
             this.VideoTab_Button.Image = global::COVIDealer.Properties.Resources.Video;
             this.VideoTab_Button.ImageSize = new System.Drawing.Size(52, 52);
-            this.VideoTab_Button.Location = new System.Drawing.Point(0, 600);
-            this.VideoTab_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.VideoTab_Button.Location = new System.Drawing.Point(0, 399);
             this.VideoTab_Button.Name = "VideoTab_Button";
             this.VideoTab_Button.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(105)))), ((int)(((byte)(196)))));
             this.VideoTab_Button.OnHoverBorderColor = System.Drawing.Color.Black;
             this.VideoTab_Button.OnHoverForeColor = System.Drawing.Color.White;
             this.VideoTab_Button.OnHoverImage = null;
             this.VideoTab_Button.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.VideoTab_Button.Size = new System.Drawing.Size(195, 200);
+            this.VideoTab_Button.Size = new System.Drawing.Size(130, 133);
             this.VideoTab_Button.TabIndex = 5;
             this.VideoTab_Button.Text = "BẢN TIN";
             this.toolTip.SetToolTip(this.VideoTab_Button, "Bản tin COVID-19 mới nhất");
@@ -126,15 +123,14 @@
             this.NewsTab_Button.ForeColor = System.Drawing.Color.White;
             this.NewsTab_Button.Image = global::COVIDealer.Properties.Resources.News;
             this.NewsTab_Button.ImageSize = new System.Drawing.Size(40, 40);
-            this.NewsTab_Button.Location = new System.Drawing.Point(0, 400);
-            this.NewsTab_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NewsTab_Button.Location = new System.Drawing.Point(0, 266);
             this.NewsTab_Button.Name = "NewsTab_Button";
             this.NewsTab_Button.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(105)))), ((int)(((byte)(196)))));
             this.NewsTab_Button.OnHoverBorderColor = System.Drawing.Color.Black;
             this.NewsTab_Button.OnHoverForeColor = System.Drawing.Color.White;
             this.NewsTab_Button.OnHoverImage = null;
             this.NewsTab_Button.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.NewsTab_Button.Size = new System.Drawing.Size(195, 200);
+            this.NewsTab_Button.Size = new System.Drawing.Size(130, 133);
             this.NewsTab_Button.TabIndex = 4;
             this.NewsTab_Button.Text = "TIN TỨC";
             this.NewsTab_Button.TextImageOffsetY = 6;
@@ -155,15 +151,14 @@
             this.StatisticsTab_Button.ForeColor = System.Drawing.Color.White;
             this.StatisticsTab_Button.Image = global::COVIDealer.Properties.Resources.Statistic;
             this.StatisticsTab_Button.ImageSize = new System.Drawing.Size(48, 48);
-            this.StatisticsTab_Button.Location = new System.Drawing.Point(0, 200);
-            this.StatisticsTab_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StatisticsTab_Button.Location = new System.Drawing.Point(0, 133);
             this.StatisticsTab_Button.Name = "StatisticsTab_Button";
             this.StatisticsTab_Button.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(105)))), ((int)(((byte)(196)))));
             this.StatisticsTab_Button.OnHoverBorderColor = System.Drawing.Color.Black;
             this.StatisticsTab_Button.OnHoverForeColor = System.Drawing.Color.White;
             this.StatisticsTab_Button.OnHoverImage = null;
             this.StatisticsTab_Button.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.StatisticsTab_Button.Size = new System.Drawing.Size(195, 200);
+            this.StatisticsTab_Button.Size = new System.Drawing.Size(130, 133);
             this.StatisticsTab_Button.TabIndex = 2;
             this.StatisticsTab_Button.Text = "THỐNG KÊ";
             this.toolTip.SetToolTip(this.StatisticsTab_Button, "Thống kê tình hình dịch");
@@ -184,14 +179,13 @@
             this.ChatTab_Button.Image = global::COVIDealer.Properties.Resources.Chat;
             this.ChatTab_Button.ImageSize = new System.Drawing.Size(48, 48);
             this.ChatTab_Button.Location = new System.Drawing.Point(0, 0);
-            this.ChatTab_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ChatTab_Button.Name = "ChatTab_Button";
             this.ChatTab_Button.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(105)))), ((int)(((byte)(196)))));
             this.ChatTab_Button.OnHoverBorderColor = System.Drawing.Color.Black;
             this.ChatTab_Button.OnHoverForeColor = System.Drawing.Color.White;
             this.ChatTab_Button.OnHoverImage = null;
             this.ChatTab_Button.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.ChatTab_Button.Size = new System.Drawing.Size(195, 200);
+            this.ChatTab_Button.Size = new System.Drawing.Size(130, 133);
             this.ChatTab_Button.TabIndex = 1;
             this.ChatTab_Button.Text = "TRÒ CHUYỆN";
             this.toolTip.SetToolTip(this.ChatTab_Button, "Trò chuyện với AI");
@@ -202,11 +196,11 @@
             this.mainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.mainPanel.AutoSize = true;
             this.mainPanel.BackColor = System.Drawing.Color.White;
-            this.mainPanel.Location = new System.Drawing.Point(208, 16);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mainPanel.Location = new System.Drawing.Point(139, 11);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(2059, 1309);
+            this.mainPanel.Size = new System.Drawing.Size(1363, 972);
             this.mainPanel.TabIndex = 1;
             // 
             // toolTip
@@ -215,19 +209,19 @@
             // 
             // MainWindows
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(2278, 1344);
+            this.ClientSize = new System.Drawing.Size(1514, 995);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.MenuPanel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainWindows";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "COVIDealer";
             this.Load += new System.EventHandler(this.MainWindows_Load);
             this.MenuPanel.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

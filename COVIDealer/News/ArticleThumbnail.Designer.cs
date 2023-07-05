@@ -59,6 +59,7 @@
             this.contentPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.contentPanel.AutoSize = true;
             this.contentPanel.BackColor = System.Drawing.Color.White;
             this.contentPanel.Controls.Add(this.panel1);
             this.contentPanel.Controls.Add(this.ThumbnailImage);
@@ -71,10 +72,13 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.Red;
             this.panel1.Controls.Add(this.Summary);
             this.panel1.Controls.Add(this.Tittle);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(397, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(587, 276);
@@ -114,6 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.Controls.Add(this.contentPanel);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -122,9 +127,11 @@
             this.MouseEnter += new System.EventHandler(this.ArticleThumbnail_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.ArticleThumbnail_MouseLeave);
             this.contentPanel.ResumeLayout(false);
+            this.contentPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ThumbnailImage)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

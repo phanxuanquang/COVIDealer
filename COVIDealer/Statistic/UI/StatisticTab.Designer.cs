@@ -37,17 +37,18 @@
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.Location_Label = new System.Windows.Forms.Label();
             this.Statistics_Panel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.treatedCase_Panel = new System.Windows.Forms.Panel();
-            this.newTreatedCaseLabel = new System.Windows.Forms.Label();
             this.treatedCase = new System.Windows.Forms.Label();
+            this.newTreatedCaseLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.deathCase_Panel = new System.Windows.Forms.Panel();
-            this.newDeathCaseLabel = new System.Windows.Forms.Label();
             this.deathCase = new System.Windows.Forms.Label();
+            this.newDeathCaseLabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.totalCase_Panel = new System.Windows.Forms.Panel();
-            this.newCaseLabel = new System.Windows.Forms.Label();
             this.covidCase = new System.Windows.Forms.Label();
+            this.newCaseLabel = new System.Windows.Forms.Label();
             this.ok = new System.Windows.Forms.Label();
             this.statisticTable = new Guna.UI.WinForms.GunaDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,6 +61,7 @@
             this.treatedCaseButton = new Guna.UI2.WinForms.Guna2Button();
             this.deathCaseButton = new Guna.UI2.WinForms.Guna2Button();
             this.Statistics_Panel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.treatedCase_Panel.SuspendLayout();
             this.deathCase_Panel.SuspendLayout();
             this.totalCase_Panel.SuspendLayout();
@@ -71,69 +73,77 @@
             // 
             this.Location_Label.AutoSize = true;
             this.Location_Label.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Location_Label.Dock = System.Windows.Forms.DockStyle.Top;
             this.Location_Label.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Location_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(52)))), ((int)(((byte)(145)))));
-            this.Location_Label.Location = new System.Drawing.Point(4, 0);
-            this.Location_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Location_Label.Location = new System.Drawing.Point(0, 0);
             this.Location_Label.Name = "Location_Label";
-            this.Location_Label.Size = new System.Drawing.Size(176, 41);
+            this.Location_Label.Size = new System.Drawing.Size(118, 28);
             this.Location_Label.TabIndex = 6;
             this.Location_Label.Text = "► Thế giới:";
             this.Location_Label.Click += new System.EventHandler(this.Location_Label_Click);
             // 
             // Statistics_Panel
             // 
-            this.Statistics_Panel.Controls.Add(this.treatedCase_Panel);
-            this.Statistics_Panel.Controls.Add(this.deathCase_Panel);
-            this.Statistics_Panel.Controls.Add(this.totalCase_Panel);
+            this.Statistics_Panel.AutoSize = true;
             this.Statistics_Panel.Controls.Add(this.Location_Label);
+            this.Statistics_Panel.Controls.Add(this.panel1);
             this.Statistics_Panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Statistics_Panel.Location = new System.Drawing.Point(0, 0);
-            this.Statistics_Panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Statistics_Panel.Name = "Statistics_Panel";
-            this.Statistics_Panel.Size = new System.Drawing.Size(2059, 171);
+            this.Statistics_Panel.Size = new System.Drawing.Size(1363, 104);
             this.Statistics_Panel.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.treatedCase_Panel);
+            this.panel1.Controls.Add(this.deathCase_Panel);
+            this.panel1.Controls.Add(this.totalCase_Panel);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1363, 76);
+            this.panel1.TabIndex = 10;
             // 
             // treatedCase_Panel
             // 
-            this.treatedCase_Panel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.treatedCase_Panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.treatedCase_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
-            this.treatedCase_Panel.Controls.Add(this.newTreatedCaseLabel);
             this.treatedCase_Panel.Controls.Add(this.treatedCase);
+            this.treatedCase_Panel.Controls.Add(this.newTreatedCaseLabel);
             this.treatedCase_Panel.Controls.Add(this.label4);
-            this.treatedCase_Panel.Location = new System.Drawing.Point(568, 49);
-            this.treatedCase_Panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.treatedCase_Panel.Location = new System.Drawing.Point(461, 0);
             this.treatedCase_Panel.Name = "treatedCase_Panel";
-            this.treatedCase_Panel.Size = new System.Drawing.Size(922, 122);
+            this.treatedCase_Panel.Size = new System.Drawing.Size(440, 76);
             this.treatedCase_Panel.TabIndex = 8;
-            // 
-            // newTreatedCaseLabel
-            // 
-            this.newTreatedCaseLabel.BackColor = System.Drawing.Color.Transparent;
-            this.newTreatedCaseLabel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.newTreatedCaseLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.newTreatedCaseLabel.Location = new System.Drawing.Point(0, 85);
-            this.newTreatedCaseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.newTreatedCaseLabel.Name = "newTreatedCaseLabel";
-            this.newTreatedCaseLabel.Size = new System.Drawing.Size(922, 31);
-            this.newTreatedCaseLabel.TabIndex = 7;
-            this.newTreatedCaseLabel.Text = "0 ca mới trong 24 giờ qua";
-            this.newTreatedCaseLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // treatedCase
             // 
             this.treatedCase.BackColor = System.Drawing.Color.Transparent;
-            this.treatedCase.Dock = System.Windows.Forms.DockStyle.Top;
+            this.treatedCase.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treatedCase.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.treatedCase.ForeColor = System.Drawing.Color.Green;
-            this.treatedCase.Location = new System.Drawing.Point(0, 31);
-            this.treatedCase.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.treatedCase.Location = new System.Drawing.Point(0, 20);
             this.treatedCase.Name = "treatedCase";
-            this.treatedCase.Size = new System.Drawing.Size(922, 54);
+            this.treatedCase.Size = new System.Drawing.Size(440, 36);
             this.treatedCase.TabIndex = 5;
             this.treatedCase.Text = "0";
             this.treatedCase.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // newTreatedCaseLabel
+            // 
+            this.newTreatedCaseLabel.BackColor = System.Drawing.Color.Transparent;
+            this.newTreatedCaseLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.newTreatedCaseLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.newTreatedCaseLabel.Location = new System.Drawing.Point(0, 56);
+            this.newTreatedCaseLabel.Name = "newTreatedCaseLabel";
+            this.newTreatedCaseLabel.Size = new System.Drawing.Size(440, 20);
+            this.newTreatedCaseLabel.TabIndex = 7;
+            this.newTreatedCaseLabel.Text = "0 ca mới trong 24 giờ qua";
+            this.newTreatedCaseLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // label4
             // 
@@ -141,52 +151,48 @@
             this.label4.Dock = System.Windows.Forms.DockStyle.Top;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.Location = new System.Drawing.Point(0, 0);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(922, 31);
+            this.label4.Size = new System.Drawing.Size(440, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "KHỎI BỆNH";
             this.label4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // deathCase_Panel
             // 
-            this.deathCase_Panel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.deathCase_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
-            this.deathCase_Panel.Controls.Add(this.newDeathCaseLabel);
             this.deathCase_Panel.Controls.Add(this.deathCase);
+            this.deathCase_Panel.Controls.Add(this.newDeathCaseLabel);
             this.deathCase_Panel.Controls.Add(this.label6);
-            this.deathCase_Panel.Location = new System.Drawing.Point(1519, 49);
-            this.deathCase_Panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deathCase_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.deathCase_Panel.Location = new System.Drawing.Point(923, 0);
             this.deathCase_Panel.Name = "deathCase_Panel";
-            this.deathCase_Panel.Size = new System.Drawing.Size(540, 122);
+            this.deathCase_Panel.Size = new System.Drawing.Size(440, 76);
             this.deathCase_Panel.TabIndex = 9;
-            // 
-            // newDeathCaseLabel
-            // 
-            this.newDeathCaseLabel.BackColor = System.Drawing.Color.Transparent;
-            this.newDeathCaseLabel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.newDeathCaseLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.newDeathCaseLabel.Location = new System.Drawing.Point(0, 85);
-            this.newDeathCaseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.newDeathCaseLabel.Name = "newDeathCaseLabel";
-            this.newDeathCaseLabel.Size = new System.Drawing.Size(540, 31);
-            this.newDeathCaseLabel.TabIndex = 7;
-            this.newDeathCaseLabel.Text = "0 ca mới trong 24 giờ qua";
-            this.newDeathCaseLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // deathCase
             // 
             this.deathCase.BackColor = System.Drawing.Color.Transparent;
-            this.deathCase.Dock = System.Windows.Forms.DockStyle.Top;
+            this.deathCase.Dock = System.Windows.Forms.DockStyle.Fill;
             this.deathCase.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.deathCase.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.deathCase.Location = new System.Drawing.Point(0, 31);
-            this.deathCase.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.deathCase.Location = new System.Drawing.Point(0, 20);
             this.deathCase.Name = "deathCase";
-            this.deathCase.Size = new System.Drawing.Size(540, 54);
+            this.deathCase.Size = new System.Drawing.Size(440, 32);
             this.deathCase.TabIndex = 5;
             this.deathCase.Text = "0";
             this.deathCase.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // newDeathCaseLabel
+            // 
+            this.newDeathCaseLabel.BackColor = System.Drawing.Color.Transparent;
+            this.newDeathCaseLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.newDeathCaseLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.newDeathCaseLabel.Location = new System.Drawing.Point(0, 52);
+            this.newDeathCaseLabel.Name = "newDeathCaseLabel";
+            this.newDeathCaseLabel.Size = new System.Drawing.Size(440, 24);
+            this.newDeathCaseLabel.TabIndex = 7;
+            this.newDeathCaseLabel.Text = "0 ca mới trong 24 giờ qua";
+            this.newDeathCaseLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // label6
             // 
@@ -195,52 +201,48 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(540, 31);
+            this.label6.Size = new System.Drawing.Size(440, 20);
             this.label6.TabIndex = 4;
             this.label6.Text = "TỬ VONG";
             this.label6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // totalCase_Panel
             // 
-            this.totalCase_Panel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.totalCase_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.totalCase_Panel.Controls.Add(this.newCaseLabel);
             this.totalCase_Panel.Controls.Add(this.covidCase);
+            this.totalCase_Panel.Controls.Add(this.newCaseLabel);
             this.totalCase_Panel.Controls.Add(this.ok);
-            this.totalCase_Panel.Location = new System.Drawing.Point(0, 49);
-            this.totalCase_Panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.totalCase_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.totalCase_Panel.Location = new System.Drawing.Point(0, 0);
             this.totalCase_Panel.Name = "totalCase_Panel";
-            this.totalCase_Panel.Size = new System.Drawing.Size(540, 122);
+            this.totalCase_Panel.Size = new System.Drawing.Size(440, 76);
             this.totalCase_Panel.TabIndex = 7;
-            // 
-            // newCaseLabel
-            // 
-            this.newCaseLabel.BackColor = System.Drawing.Color.Transparent;
-            this.newCaseLabel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.newCaseLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.newCaseLabel.Location = new System.Drawing.Point(0, 85);
-            this.newCaseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.newCaseLabel.Name = "newCaseLabel";
-            this.newCaseLabel.Size = new System.Drawing.Size(540, 31);
-            this.newCaseLabel.TabIndex = 6;
-            this.newCaseLabel.Text = "0 ca mới trong 24 giờ qua";
-            this.newCaseLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // covidCase
             // 
             this.covidCase.BackColor = System.Drawing.Color.Transparent;
-            this.covidCase.Dock = System.Windows.Forms.DockStyle.Top;
+            this.covidCase.Dock = System.Windows.Forms.DockStyle.Fill;
             this.covidCase.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.covidCase.ForeColor = System.Drawing.Color.Red;
-            this.covidCase.Location = new System.Drawing.Point(0, 31);
-            this.covidCase.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.covidCase.Location = new System.Drawing.Point(0, 20);
             this.covidCase.Name = "covidCase";
-            this.covidCase.Size = new System.Drawing.Size(540, 54);
+            this.covidCase.Size = new System.Drawing.Size(440, 36);
             this.covidCase.TabIndex = 5;
             this.covidCase.Text = "0";
             this.covidCase.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // newCaseLabel
+            // 
+            this.newCaseLabel.BackColor = System.Drawing.Color.Transparent;
+            this.newCaseLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.newCaseLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.newCaseLabel.Location = new System.Drawing.Point(0, 56);
+            this.newCaseLabel.Name = "newCaseLabel";
+            this.newCaseLabel.Size = new System.Drawing.Size(440, 20);
+            this.newCaseLabel.TabIndex = 6;
+            this.newCaseLabel.Text = "0 ca mới trong 24 giờ qua";
+            this.newCaseLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // ok
             // 
@@ -248,9 +250,8 @@
             this.ok.Dock = System.Windows.Forms.DockStyle.Top;
             this.ok.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.ok.Location = new System.Drawing.Point(0, 0);
-            this.ok.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ok.Name = "ok";
-            this.ok.Size = new System.Drawing.Size(540, 31);
+            this.ok.Size = new System.Drawing.Size(440, 20);
             this.ok.TabIndex = 4;
             this.ok.Text = "NHIỄM BỆNH";
             this.ok.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -284,6 +285,7 @@
             this.Column2,
             this.Column3,
             this.Column4});
+            this.statisticTable.Cursor = System.Windows.Forms.Cursors.Default;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -294,14 +296,13 @@
             this.statisticTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.statisticTable.EnableHeadersVisualStyles = false;
             this.statisticTable.GridColor = System.Drawing.Color.Gray;
-            this.statisticTable.Location = new System.Drawing.Point(0, 257);
-            this.statisticTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.statisticTable.Location = new System.Drawing.Point(0, 167);
             this.statisticTable.Name = "statisticTable";
             this.statisticTable.ReadOnly = true;
             this.statisticTable.RowHeadersVisible = false;
             this.statisticTable.RowHeadersWidth = 62;
             this.statisticTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.statisticTable.Size = new System.Drawing.Size(984, 1052);
+            this.statisticTable.Size = new System.Drawing.Size(611, 805);
             this.statisticTable.TabIndex = 8;
             this.statisticTable.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.statisticTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -360,10 +361,9 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(52)))), ((int)(((byte)(145)))));
-            this.label1.Location = new System.Drawing.Point(3, 209);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(2, 136);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(371, 41);
+            this.label1.Size = new System.Drawing.Size(252, 28);
             this.label1.TabIndex = 10;
             this.label1.Text = "► Tình hình dịch cả nước";
             // 
@@ -376,8 +376,7 @@
             this.statisticChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.statisticChart.Legends.Add(legend1);
-            this.statisticChart.Location = new System.Drawing.Point(966, 335);
-            this.statisticChart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.statisticChart.Location = new System.Drawing.Point(617, 219);
             this.statisticChart.Name = "statisticChart";
             this.statisticChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             this.statisticChart.PaletteCustomColors = new System.Drawing.Color[] {
@@ -387,7 +386,7 @@
             series1.Name = "Case";
             series1.YValuesPerPoint = 2;
             this.statisticChart.Series.Add(series1);
-            this.statisticChart.Size = new System.Drawing.Size(1254, 974);
+            this.statisticChart.Size = new System.Drawing.Size(838, 784);
             this.statisticChart.TabIndex = 12;
             this.statisticChart.Text = "chart1";
             title1.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -410,11 +409,10 @@
             this.caseButton.ForeColor = System.Drawing.Color.Black;
             this.caseButton.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(154)))), ((int)(((byte)(155)))));
             this.caseButton.HoverState.Parent = this.caseButton;
-            this.caseButton.Location = new System.Drawing.Point(993, 257);
-            this.caseButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.caseButton.Location = new System.Drawing.Point(617, 167);
             this.caseButton.Name = "caseButton";
             this.caseButton.ShadowDecoration.Parent = this.caseButton;
-            this.caseButton.Size = new System.Drawing.Size(340, 70);
+            this.caseButton.Size = new System.Drawing.Size(240, 46);
             this.caseButton.TabIndex = 13;
             this.caseButton.Text = "Số ca nhiễm bệnh";
             this.caseButton.Click += new System.EventHandler(this.caseButton_Click);
@@ -435,11 +433,10 @@
             this.treatedCaseButton.ForeColor = System.Drawing.Color.Black;
             this.treatedCaseButton.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(249)))), ((int)(((byte)(96)))));
             this.treatedCaseButton.HoverState.Parent = this.treatedCaseButton;
-            this.treatedCaseButton.Location = new System.Drawing.Point(1354, 257);
-            this.treatedCaseButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.treatedCaseButton.Location = new System.Drawing.Point(870, 167);
             this.treatedCaseButton.Name = "treatedCaseButton";
             this.treatedCaseButton.ShadowDecoration.Parent = this.treatedCaseButton;
-            this.treatedCaseButton.Size = new System.Drawing.Size(340, 70);
+            this.treatedCaseButton.Size = new System.Drawing.Size(240, 46);
             this.treatedCaseButton.TabIndex = 14;
             this.treatedCaseButton.Text = "Số ca khỏi bệnh";
             this.treatedCaseButton.Click += new System.EventHandler(this.treatedCaseButton_Click);
@@ -459,34 +456,33 @@
             this.deathCaseButton.ForeColor = System.Drawing.Color.Black;
             this.deathCaseButton.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
             this.deathCaseButton.HoverState.Parent = this.deathCaseButton;
-            this.deathCaseButton.Location = new System.Drawing.Point(1715, 257);
-            this.deathCaseButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deathCaseButton.Location = new System.Drawing.Point(1123, 167);
             this.deathCaseButton.Name = "deathCaseButton";
             this.deathCaseButton.ShadowDecoration.Parent = this.deathCaseButton;
-            this.deathCaseButton.Size = new System.Drawing.Size(340, 70);
+            this.deathCaseButton.Size = new System.Drawing.Size(240, 46);
             this.deathCaseButton.TabIndex = 15;
             this.deathCaseButton.Text = "Số ca tử vong";
             this.deathCaseButton.Click += new System.EventHandler(this.deathCaseButton_Click);
             // 
             // StatisticTab
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.statisticTable);
             this.Controls.Add(this.deathCaseButton);
             this.Controls.Add(this.treatedCaseButton);
             this.Controls.Add(this.caseButton);
-            this.Controls.Add(this.statisticChart);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Statistics_Panel);
+            this.Controls.Add(this.statisticChart);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "StatisticTab";
-            this.Size = new System.Drawing.Size(2059, 1309);
+            this.Size = new System.Drawing.Size(1363, 972);
             this.Load += new System.EventHandler(this.StatisticTab_Load);
             this.Statistics_Panel.ResumeLayout(false);
             this.Statistics_Panel.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.treatedCase_Panel.ResumeLayout(false);
             this.deathCase_Panel.ResumeLayout(false);
             this.totalCase_Panel.ResumeLayout(false);
@@ -522,5 +518,6 @@
         private Guna.UI2.WinForms.Guna2Button caseButton;
         private Guna.UI2.WinForms.Guna2Button treatedCaseButton;
         private Guna.UI2.WinForms.Guna2Button deathCaseButton;
+        private System.Windows.Forms.Panel panel1;
     }
 }

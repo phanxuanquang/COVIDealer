@@ -86,7 +86,7 @@
             this.UploadDate.Location = new System.Drawing.Point(488, 92);
             this.UploadDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UploadDate.Name = "UploadDate";
-            this.UploadDate.Size = new System.Drawing.Size(499, 35);
+            this.UploadDate.Size = new System.Drawing.Size(112, 25);
             this.UploadDate.TabIndex = 14;
             this.UploadDate.Text = "Upload Date";
             this.UploadDate.MouseEnter += new System.EventHandler(this.contentPanel_MouseEnter);
@@ -147,6 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.contentPanel);
             this.DoubleBuffered = true;

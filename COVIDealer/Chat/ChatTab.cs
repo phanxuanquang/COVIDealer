@@ -64,8 +64,8 @@ namespace COVIDealer
                 }
                 catch (Exception ex)
                 {
-                    string errorMessage = await getTranslationFrom(ex.Message, "en", "vi");
-                    MessageBox.Show($"Lỗi phân tích câu hỏi. Vui lòng thử lại sau.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //string errorMessage = await getTranslationFrom(ex.Message, "en", "vi");
+                    MessageBox.Show($"Lỗi phân tích câu hỏi. Vui lòng thử lại sau.\n{ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else

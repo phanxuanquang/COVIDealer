@@ -14,7 +14,7 @@ namespace COVIDealer
             Tittle.Text = articleData.ChildNodes["div"].ChildNodes["h2"].InnerText.Trim();
             Summary.Text = articleData.ChildNodes["div"].ChildNodes["p"].InnerText.Trim();
             ThumbnailImage.ImageLocation = articleData.ChildNodes["a"].ChildNodes["img"].Attributes["src"].Value;
-            
+
             articleLink = "https://covid19.gov.vn" + articleData.ChildNodes["a"].Attributes["href"].Value;
         }
 

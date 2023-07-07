@@ -26,7 +26,7 @@ namespace COVIDealer
             List<HtmlNode> nodes = new List<HtmlNode>();
             for (int index = 1; index <= 5; index++)
             {
-                List<HtmlNode> task = await getDataFrom($"https://covid19.gov.vn/timelinelist/1711566/{index}.htm");
+                List<HtmlNode> task = await getDataFrom($"https://covid19.gov.vn/timelinelist/1711566/{index}.htm", "//div[contains(@class, 'box-stream-item')]");
                 nodes.AddRange(task);
             }
             foreach (var item in nodes.Select(item => new ArticleThumbnail(item)))
@@ -35,7 +35,7 @@ namespace COVIDealer
             }
         }
 
-        async Task<List<HtmlNode>> getDataFrom(string URL)
+        async Task<List<HtmlNode>> getDataFrom(string URL, string xpath)
         {
             List<HtmlNode> items = new List<HtmlNode>();
             using (HttpClient httpClient = new HttpClient())
@@ -46,7 +46,7 @@ namespace COVIDealer
                 bytes = Decompress(bytes);
                 string content = HttpUtility.HtmlDecode(Encoding.UTF8.GetString(bytes));
                 document.LoadHtml(content);
-                HtmlNodeCollection nodes = document.DocumentNode.SelectNodes("//div[contains(@class, 'box-stream-item')]");
+                HtmlNodeCollection nodes = document.DocumentNode.SelectNodes(xpath);
                 if (nodes == null) return items;
                 foreach (var node in nodes)
                 {

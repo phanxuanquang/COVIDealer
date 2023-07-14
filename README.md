@@ -1,6 +1,9 @@
 **© 2023 University of Information Technology / COVIDealer Project**
 ------------
 ![alt text](https://i.imgur.com/cXLHb3D.png)
+In these challenging times, staying informed about the COVID-19 situation is crucial to ensuring the safety and well-being of ourselves and our loved ones. With the COVID-19 Tracker & Advisory app, I aim to provide you with the latest updates on the pandemic in Vietnam while offering valuable advice to navigate through this unprecedented crisis.
+
+My application is designed to be your go-to resource for real-time information on COVID-19 cases, and preventive measures in Vietnam. By leveraging reliable data from trusted sources such as the Ministry of Health, I offer accurate and up-to-date insights to help you make informed decisions.
 ____________________________
 ## 1. Main objectives:
 * **Chatbot Development**: The chatbot will possess the capability to provide prompt and sensible responses to user queries. It will engage in interactive conversations, offering personalized recommendations based on user needs, thereby optimizing the time users spend on information retrieval.
